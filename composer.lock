@@ -607,12 +607,6 @@
                 "url": "https://github.com/Thruio/ActiveRecord.git",
                 "reference": "85c465c73905eeba61a5e3266146a24a3ff7cc16"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Thruio/ActiveRecord/zipball/85c465c73905eeba61a5e3266146a24a3ff7cc16",
-                "reference": "85c465c73905eeba61a5e3266146a24a3ff7cc16",
-                "shasum": ""
-            },
             "require": {
                 "thru.io/json-pretty-printer": "1.0.*",
                 "thru.io/uuid": "1.0"
@@ -628,7 +622,11 @@
                     "Thru\\ActiveRecord\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Thru\\ActiveRecord\\Test\\": "tests/"
+                }
+            },
             "authors": [
                 {
                     "name": "Matthew Baggett",
@@ -645,12 +643,6 @@
                 "type": "git",
                 "url": "https://github.com/Thruio/ActiveRecordMigrations.git",
                 "reference": "8e945fddd21c9519ca0309f615c9d84ab1baf266"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Thruio/ActiveRecordMigrations/zipball/8e945fddd21c9519ca0309f615c9d84ab1baf266",
-                "reference": "8e945fddd21c9519ca0309f615c9d84ab1baf266",
-                "shasum": ""
             },
             "require": {
                 "nategood/commando": "*",
@@ -671,7 +663,11 @@
                     "Thru\\ActiveRecordMigrations\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Thru\\ActiveRecordMigrations\\Test\\": "tests/"
+                }
+            },
             "authors": [
                 {
                     "name": "Matthew Baggett",
@@ -726,12 +722,6 @@
                 "url": "https://github.com/Thruio/Session.git",
                 "reference": "7ea740cc9ddeb8e616b379abc521d24a13c6aef3"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Thruio/Session/zipball/7ea740cc9ddeb8e616b379abc521d24a13c6aef3",
-                "reference": "7ea740cc9ddeb8e616b379abc521d24a13c6aef3",
-                "shasum": ""
-            },
             "require": {
                 "thru.io/active_record": ">=0.2"
             },
@@ -741,7 +731,11 @@
                     "Thru\\Session\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Thru\\Session\\Test\\": "tests/"
+                }
+            },
             "authors": [
                 {
                     "name": "Matthew Baggett",
@@ -801,12 +795,6 @@
                 "url": "https://github.com/Thruio/Translation.git",
                 "reference": "4a1298beb68fa406d706f68d297d76db26b2ded0"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Thruio/Translation/zipball/4a1298beb68fa406d706f68d297d76db26b2ded0",
-                "reference": "4a1298beb68fa406d706f68d297d76db26b2ded0",
-                "shasum": ""
-            },
             "require": {
                 "nategood/commando": "*",
                 "stichoza/google-translate-php": "~3.0",
@@ -826,7 +814,11 @@
                     "Thru\\Translation\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Thru\\Translation\\Test\\": "tests/"
+                }
+            },
             "authors": [
                 {
                     "name": "Matthew Baggett",
