@@ -1,0 +1,47 @@
+{
+  "name": "thru.io/starter-app",
+  "description": "Skeleton application usign thru.io/starter-kit",
+  "license": "GPL V2",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Matthew Baggett",
+      "email": "matthew@baggett.me"
+    }
+  ],
+  "repositories": [
+    {
+      "url": "https://github.com/Thruio/TigerKit.git",
+      "type": "git"
+    },
+    {
+      "url": "https://github.com/Thruio/ActiveRecord.git",
+      "type": "git"
+    },
+    {
+      "url": "https://github.com/Thruio/ActiveRecordMigrations.git",
+      "type": "git"
+    },
+    {
+      "url": "https://github.com/Thruio/Session.git",
+      "type": "git"
+    },
+    {
+      "url": "https://github.com/Thruio/Translation.git",
+      "type": "git"
+    }
+  ],
+  "require": {
+    "thru.io/tiger-kit": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "SampleApp\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SampleApp\\Test\\": "tests/"
+    }
+  }
+}
