@@ -1,8 +1,9 @@
 {
   "name": "thru.io/starter-app",
-  "description": "Skeleton application usign thru.io/starter-kit",
+  "description": "Skeleton application using thru.io/tiger-kit",
   "license": "GPL V2",
   "minimum-stability": "dev",
+  "php": ">=5.5.0",
   "authors": [
     {
       "name": "Matthew Baggett",
