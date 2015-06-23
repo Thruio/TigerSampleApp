@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="well bs-component">
+      <form class="form-horizontal" method="post" action="">
+        <fieldset>
+          <legend><?php echo $this->t("Login"); ?></legend>
+          <div class="form-group">
+            <label class="col-lg-3 control-label" for="inputEmail"><?php echo $this->t("Username / Email"); ?></label>
+
+            <div class="col-lg-9">
+              <input type="text" placeholder="<?php echo $this->t("John Smith"); ?>" id="username" name="username"
+                     class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label" for="inputPassword"><?php echo $this->t("Password"); ?></label>
+
+            <div class="col-lg-9">
+              <input type="password" placeholder="<?php echo $this->t("Password"); ?>" id="password" name="password"
+                     class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-9 col-lg-offset-3">
+              <button class="btn btn-primary" type="submit"><?php echo $this->t("Login"); ?></button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h3><?php echo $this->t("Forgot Password?"); ?></h3>
+
+    <p><?php echo $this->t("No problem, you can ") . $this->link('user/password-reset', $this->t("reset your password")); ?></p>
+
+    <h3><?php echo $this->t("Not a :sitename user yet?", array(':sitename' => $this->getSiteTitle(false))); ?></h3>
+
+    <p><?php echo $this->t("You can ") . $this->link('register', $this->t("sign up")) . $this->t(" for free!"); ?></p>
+  </div>
+</div>

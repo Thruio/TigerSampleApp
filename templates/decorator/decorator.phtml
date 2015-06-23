@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <?= $view->render("decorator/head.phtml", ["noWrapper" => true]); ?>
+</head>
+
+<body>
+
+<div class="container">
+  <?= $view->render("decorator/topnav.phtml", ["noWrapper" => true]); ?>
+
+  <?= $view->render($template, ["noWrapper" => true]) ?>
+
+  <?= $view->render("decorator/footer.phtml", ["noWrapper" => true]); ?>
+
+</div>
+<!-- /container -->
+
+
+<?= $view->render("decorator/end_scripts.phtml", ["noWrapper" => true]); ?>
+</body>
+</html>

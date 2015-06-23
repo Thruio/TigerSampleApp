@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6864ba0784c1e704c9de56dfe348c434",
+    "hash": "8967e6539f1c9760d551d694f987cd72",
     "packages": [
         {
             "name": "filp/whoops",
@@ -308,6 +308,47 @@
                 "shell"
             ],
             "time": "2012-03-25 18:18:10"
+        },
+        {
+            "name": "leafo/lessphp",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/lessphp.git",
+                "reference": "51f3f06f0fe78a722dabfd14578444bdd078d9de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafo/lessphp/zipball/51f3f06f0fe78a722dabfd14578444bdd078d9de",
+                "reference": "51f3f06f0fe78a722dabfd14578444bdd078d9de",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "lessc.inc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "lessphp is a compiler for LESS written in PHP.",
+            "homepage": "http://leafo.net/lessphp/",
+            "time": "2013-08-09 17:09:19"
         },
         {
             "name": "monolog/monolog",
@@ -919,19 +960,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/TigerKit.git",
-                "reference": "cfc3153f1f87f20620899f030f40759244503d9b"
+                "reference": "421947ffc1ea53a0ddff1f2ea22394cbb3f7e7ea"
             },
             "require": {
                 "filp/whoops": "1.*",
                 "flynsarmy/slim-monolog": "~1.0",
+                "leafo/lessphp": "0.4.0",
                 "predis/predis": "1.0.*@dev",
                 "raveren/kint": "dev-master",
-                "slim/slim": "2.*",
+                "slim/slim": "~2.6",
                 "symfony/yaml": "2.6.6",
                 "thru.io/active_record": ">=0.2",
                 "thru.io/active_record_migrations": "dev-master",
                 "thru.io/session": "dev-master",
                 "thru.io/translation": "dev-master",
+                "twbs/bootstrap": "3.3.5",
                 "zeuxisoo/slim-whoops": "dev-master"
             },
             "require-dev": {
@@ -960,7 +1003,7 @@
                 }
             ],
             "description": "Starter kit using Slim, Active Record, Sessions, Translation, Docker all in a can.",
-            "time": "2015-06-23 13:33:50"
+            "time": "2015-06-23 14:48:42"
         },
         {
             "name": "thru.io/translation",
@@ -1036,6 +1079,57 @@
             ],
             "description": "A nice little library to interact with UUIDs",
             "time": "2015-02-15 11:30:33"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v3.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "16b48259a62f576e52c903c476bd42b90ab22482"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/16b48259a62f576e52c903c476bd42b90ab22482",
+                "reference": "16b48259a62f576e52c903c476bd42b90ab22482",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                },
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "http://getbootstrap.com",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "less",
+                "mobile-first",
+                "responsive",
+                "web"
+            ],
+            "time": "2015-06-16 16:13:22"
         },
         {
             "name": "zeuxisoo/slim-whoops",
