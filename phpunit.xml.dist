@@ -2,20 +2,29 @@
 <phpunit bootstrap="bootstrap.php"
          colors="true"
          stopOnFailure="false">
-    <testsuites>
-        <testsuite name="web">
-            <directory>tests/web</directory>
-        </testsuite>
+  <testsuites>
+    <testsuite name="web">
+      <file>tests/web/UserTest.php</file>
+      <file>tests/web/IndexTest.php</file>
+    </testsuite>
+    <testsuite name="tigerkit">
+      <directory>vendor/thru.io/tiger-kit/tests</directory>
+    </testsuite>
+  </testsuites>
 
-    </testsuites>
-    <logging>
-        <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>
-        <log type="coverage-clover" target="build/logs/clover.xml"/>
-    </logging>
-    <filter>
-        <blacklist>
-            <directory>vendor</directory>
-            <directory>tests</directory>
-        </blacklist>
-    </filter>
+  <logging>
+    <log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>
+    <log type="coverage-clover" target="build/logs/clover.xml"/>
+  </logging>
+
+  <filter>
+    <blacklist>
+      <directory>vendor</directory>
+      <directory>tests</directory>
+      <directory>vendor/thru.io/tiger-kittests</directory>
+      <exclude>
+        <directory>vendor/thru.io/tiger-kit</directory>
+      </exclude>
+    </blacklist>
+  </filter>
 </phpunit>
