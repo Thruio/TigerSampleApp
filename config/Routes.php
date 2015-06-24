@@ -14,3 +14,8 @@ use SampleApp\Controllers;
 
 # Dashboard
 \TigerKit\TigerApp::getSlimApp()->get('/dashboard', '\SampleApp\Controllers\DashboardController:dashboard');
+
+# Gallery
+\TigerKit\TigerApp::getSlimApp()->get('/gallery', '\SampleApp\Controllers\GalleryController:showList');
+\TigerKit\TigerApp::getSlimApp()->get('/gallery/upload', '\SampleApp\Controllers\GalleryController:showUpload');
+\TigerKit\TigerApp::getSlimApp()->post('/gallery/upload', '\SampleApp\Controllers\GalleryController:doUpload');

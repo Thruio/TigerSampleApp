@@ -1,0 +1,15 @@
+<h1>Gallery</h1>
+<div class="row">
+  <div class="col-lg-3 text-right">
+    <a class="btn btn-default" href="<?=$this->url("/gallery/upload"); ?>" role="button">Upload An Image</a>
+  </div>
+</div>
+<div class="row">
+<?php foreach($images as $image): ?>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="..." alt="Image Yo">
+    </a>
+  </div>
+<?php endforeach; ?>
+</div>
