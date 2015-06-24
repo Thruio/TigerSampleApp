@@ -2,7 +2,10 @@ language: php
 
 php: 5.5
 
-before_script :
+env:
+  - HOST=Travis
+
+before_script:
   - composer install
   - mysql -e 'create database tigerkitstarterapp;'
   - mysql -e "use mysql; SET PASSWORD FOR 'travis'@'localhost' = PASSWORD('travis'); FLUSH PRIVILEGES;"
