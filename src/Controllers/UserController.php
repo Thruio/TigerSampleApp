@@ -31,15 +31,14 @@ class UserController extends BaseController
 
     if (!$user instanceof Models\User) {
       TigerApp::log("No such user {$username}", Log::WARN);
+      $this->slim->redirect("/login?failed");
     } elseif ($user->checkPassword($password)) {
       $_SESSION['user'] = $user;
       $this->slim->redirect("/dashboard");
-      exit;
     } else {
       TigerApp::log("Failed login for {$username}", Log::WARN);
+      $this->slim->redirect("/login?failed");
     }
-    $this->slim->redirect("/login?failed");
-    exit;
   }
 
   public function showRegister()
@@ -53,23 +52,23 @@ class UserController extends BaseController
   public function doRegister()
   {
     if ($_POST['password'] !== $_POST['password2']) {
-      header("Location: register?failed=" . urlencode("Passwords do not match"));
-      exit;
+      $this->slim->redirect("register?failed=" . urlencode("Passwords do not match"));
+      return false;
     }
 
     if (Models\User::search()->where('username', $_POST['username'])->count() > 0) {
-      header("Location: register?failed=" . urlencode("Username in use."));
-      exit;
+      $this->slim->redirect("register?failed=" . urlencode("Username in use."));
+      return false;
     }
 
     if (strlen($_POST['password']) < 6) {
-      header("Location: register?failed=" . urlencode("Password has to be atleast 6 characters"));
-      exit;
+      $this->slim->redirect("register?failed=" . urlencode("Password has to be atleast 6 characters"));
+      return false;
     }
 
     if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-      header("Location: register?failed=" . urlencode("Email address invalid"));
-      exit;
+      $this->slim->redirect("register?failed=" . urlencode("Email address invalid"));
+      return false;
     }
 
     $user = new Models\User();
@@ -81,7 +80,6 @@ class UserController extends BaseController
     $user->save();
     $_SESSION['user'] = $user;
     $this->slim->redirect("/dashboard");
-    exit;
   }
 
   public function logout()
@@ -92,7 +90,6 @@ class UserController extends BaseController
     }
 
     Session::dispose('user');
-    header("Location: login");
-    exit;
+    $this->slim->redirect("/login");
   }
 }
