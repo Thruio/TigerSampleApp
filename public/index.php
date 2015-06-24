@@ -3,4 +3,4 @@ require_once("../bootstrap.php");
 
 use TigerKit\TigerApp;
 
-TigerApp::run();
+TigerApp::run()->execute();

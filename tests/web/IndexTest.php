@@ -6,8 +6,7 @@ use TigerKit\Test\TigerWebBaseTest;
 
 class IndexTest extends TigerWebBaseTest {
   public function testHome() {
-    var_dump($this->doRequest("/"));
-
-    $this->assertContains('home', $response->getBody());
+    $response = $this->doRequest("GET", "/");
+    $this->assertTrue($response->isOk());
   }
 }
