@@ -33,7 +33,7 @@ class UserController extends BaseController
       TigerApp::log("No such user {$username}", Log::WARN);
       $this->slim->redirect("/login?failed");
     } elseif ($user->checkPassword($password)) {
-      $_SESSION['user'] = $user;
+      Session::set("user", $user);
       $this->slim->redirect("/dashboard");
     } else {
       TigerApp::log("Failed login for {$username}", Log::WARN);
@@ -51,34 +51,34 @@ class UserController extends BaseController
 
   public function doRegister()
   {
-    if ($_POST['password'] !== $_POST['password2']) {
+    if ($this->slim->request()->post('password') !== $this->slim->request()->post('password2')) {
       $this->slim->redirect("register?failed=" . urlencode("Passwords do not match"));
       return false;
     }
 
-    if (Models\User::search()->where('username', $_POST['username'])->count() > 0) {
+    if (Models\User::search()->where('username', $this->slim->request()->post('username'))->count() > 0) {
       $this->slim->redirect("register?failed=" . urlencode("Username in use."));
       return false;
     }
 
-    if (strlen($_POST['password']) < 6) {
+    if (strlen($this->slim->request()->post('password')) < 6) {
       $this->slim->redirect("register?failed=" . urlencode("Password has to be atleast 6 characters"));
       return false;
     }
 
-    if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    if (!filter_var($this->slim->request()->post('email'), FILTER_VALIDATE_EMAIL)) {
       $this->slim->redirect("register?failed=" . urlencode("Email address invalid"));
       return false;
     }
 
     $user = new Models\User();
-    $user->username = $_POST['username'];
-    $user->displayname = $_POST['realname'];
-    $user->setPassword($_POST['password']);
+    $user->username = $this->slim->request()->post('username');
+    $user->displayname = $this->slim->request()->post('realname');
+    $user->setPassword($this->slim->request()->post('password'));
     $user->created = date("Y-m-d H:i:s");
-    $user->email = $_POST['email'];
+    $user->email = $this->slim->request()->post('email');
     $user->save();
-    $_SESSION['user'] = $user;
+    Session::set("user", $user);
     $this->slim->redirect("/dashboard");
   }
 

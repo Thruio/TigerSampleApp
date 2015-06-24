@@ -1,6 +1,7 @@
 <?php
 namespace SampleApp\Controllers;
 
+use Thru\Session\Session;
 use TigerKit\Models;
 
 class IndexController extends BaseController
