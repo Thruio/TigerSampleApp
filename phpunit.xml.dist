@@ -4,8 +4,8 @@
          stopOnFailure="false">
   <testsuites>
     <testsuite name="web">
-      <file>tests/web/UserTest.php</file>
-      <file>tests/web/IndexTest.php</file>
+      <file>tests/Web/UserTest.php</file>
+      <file>tests/Web/IndexTest.php</file>
     </testsuite>
     <testsuite name="tigerkit">
       <directory>vendor/thru.io/tiger-kit/tests</directory>

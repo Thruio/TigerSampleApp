@@ -921,7 +921,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/Session.git",
-                "reference": "18de64c18758cecd99b079b6f8db916dade12590"
+                "reference": "ff813d41e913c98e2e3dc8d50e8925954d0ccca2"
             },
             "require": {
                 "thru.io/active_record": ">=0.2"
@@ -944,7 +944,7 @@
                 }
             ],
             "description": "Sessions handler",
-            "time": "2015-06-23 16:37:24"
+            "time": "2015-06-24 12:08:25"
         },
         {
             "name": "thru.io/tiger-kit",
@@ -952,7 +952,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/TigerKit.git",
-                "reference": "c244ea06905eacc45ca672e6bd91bf72bc36f58a"
+                "reference": "f83f5be5eaaf24522e0f3bb4700c728d29fa0499"
             },
             "require": {
                 "filp/whoops": "1.*",
@@ -995,7 +995,7 @@
                 }
             ],
             "description": "Starter kit using Slim, Active Record, Sessions, Translation, Docker all in a can.",
-            "time": "2015-06-24 11:58:39"
+            "time": "2015-06-24 13:17:03"
         },
         {
             "name": "thru.io/translation",
