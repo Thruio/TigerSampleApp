@@ -12,18 +12,18 @@ class GalleryController extends BaseController
     $this->slim->render('gallery/list.phtml', ['images' => $imageService->getAllImages()]);
   }
 
-  public function showUpload(){
+  public function showUpload() {
     Models\User::checkLoggedIn();
     $this->slim->render('gallery/upload.phtml');
   }
 
-  public function doUpload(){
+  public function doUpload() {
     Models\User::checkLoggedIn();
     $user = Models\User::getCurrent();
-    if($user instanceof Models\User) {
+    if ($user instanceof Models\User) {
       $imageService = new ImageService();
       $imageService->uploadImage($user, $_FILES['file']);
-    }else{
+    } else {
       $this->slim->notFound();
     }
   }
