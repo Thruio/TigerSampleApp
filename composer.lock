@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "69165decff45fe64b41a6fb1ed230d70f8b07249"
+                "reference": "959ebde93ccb1bbb5152e56eecc4c1d57430f77c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/69165decff45fe64b41a6fb1ed230d70f8b07249",
-                "reference": "69165decff45fe64b41a6fb1ed230d70f8b07249",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/959ebde93ccb1bbb5152e56eecc4c1d57430f77c",
+                "reference": "959ebde93ccb1bbb5152e56eecc4c1d57430f77c",
                 "shasum": ""
             },
             "require": {
@@ -76,7 +76,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-06-24 00:06:45"
+            "time": "2015-06-24 23:31:20"
         },
         {
             "name": "dropbox/dropbox-sdk",
@@ -279,12 +279,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "156f6915a89ca2cc9a3b36abef65f336ce68c754"
+                "reference": "2ee5bc7f1a92efecc90da7f6711a53a7be26b5b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/156f6915a89ca2cc9a3b36abef65f336ce68c754",
-                "reference": "156f6915a89ca2cc9a3b36abef65f336ce68c754",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/2ee5bc7f1a92efecc90da7f6711a53a7be26b5b7",
+                "reference": "2ee5bc7f1a92efecc90da7f6711a53a7be26b5b7",
                 "shasum": ""
             },
             "require": {
@@ -322,20 +322,20 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2015-06-16 01:16:05"
+            "time": "2015-06-24 16:16:25"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "dev-master",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "644db73bfa1571af785172887836d6ec01d787ed"
+                "reference": "af0e1758de355eb113917ad79c3c0e3604bce4bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/644db73bfa1571af785172887836d6ec01d787ed",
-                "reference": "644db73bfa1571af785172887836d6ec01d787ed",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/af0e1758de355eb113917ad79c3c0e3604bce4bd",
+                "reference": "af0e1758de355eb113917ad79c3c0e3604bce4bd",
                 "shasum": ""
             },
             "require": {
@@ -380,7 +380,7 @@
                 "stream",
                 "uri"
             ],
-            "time": "2015-06-16 01:05:58"
+            "time": "2015-06-24 19:55:15"
         },
         {
             "name": "guzzlehttp/ringphp",
@@ -1498,7 +1498,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/TigerKit.git",
-                "reference": "ac2114bb360b5278b599c9e6027f5f0a316b854b"
+                "reference": "59644820513ddb51f99bbfe157dc3e6623ba69e5"
             },
             "require": {
                 "filp/whoops": "1.*",
@@ -1545,7 +1545,7 @@
                 }
             ],
             "description": "Starter kit using Slim, Active Record, Sessions, Translation, Docker all in a can.",
-            "time": "2015-06-24 15:25:00"
+            "time": "2015-06-25 14:35:14"
         },
         {
             "name": "thru.io/translation",
@@ -2340,12 +2340,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "893f3ce946f2b65920b173d831d769ab2f35097e"
+                "reference": "21b619c6f0386a06d1646f401a398af3d33fc047"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/893f3ce946f2b65920b173d831d769ab2f35097e",
-                "reference": "893f3ce946f2b65920b173d831d769ab2f35097e",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/21b619c6f0386a06d1646f401a398af3d33fc047",
+                "reference": "21b619c6f0386a06d1646f401a398af3d33fc047",
                 "shasum": ""
             },
             "require": {
@@ -2404,7 +2404,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-23 14:43:58"
+            "time": "2015-06-25 05:24:49"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -3013,12 +3013,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "2f5f776587d59b4808d29a25fffd84e37033e687"
+                "reference": "d7246885b7fe4cb5a2786bda34362d2f0e40b730"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/2f5f776587d59b4808d29a25fffd84e37033e687",
-                "reference": "2f5f776587d59b4808d29a25fffd84e37033e687",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/d7246885b7fe4cb5a2786bda34362d2f0e40b730",
+                "reference": "d7246885b7fe4cb5a2786bda34362d2f0e40b730",
                 "shasum": ""
             },
             "require": {
@@ -3063,7 +3063,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2015-06-19 15:09:14"
+            "time": "2015-06-24 15:32:32"
         },
         {
             "name": "symfony/filesystem",
