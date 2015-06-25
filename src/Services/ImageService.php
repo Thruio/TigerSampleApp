@@ -3,11 +3,11 @@ namespace SampleApp\Services;
 
 use TigerKit\Models;
 
-class ImageService extends BaseService{
+class ImageService extends BaseService {
   /**
    * @return Models\Image[]
    */
-  public function getAllImages(){
+  public function getAllImages() {
     return Models\Image::search()->where('deleted', "No")->exec();
   }
 
@@ -16,7 +16,7 @@ class ImageService extends BaseService{
    * @param $uploadFile
    * @return Models\Image
    */
-  public function uploadImage(Models\User $user, $uploadFile){
+  public function uploadImage(Models\User $user, $uploadFile) {
     $image = Models\Image::CreateFromUpload($uploadFile);
     $image->user_id = $user->user_id;
     $image->save();
