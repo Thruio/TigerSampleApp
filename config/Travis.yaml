@@ -3,4 +3,5 @@ Copyright: 'Your Name Here'
 'Debug Mode': 'On'
 Databases:
     Default: { Type: Mysql, Host: localhost, Port: 3306, Username: travis, Password: travis, Database: tigerkitstarterapp }
-
+Storage:
+    Default: { Type: Zip, Location: assets/datablob.zip }

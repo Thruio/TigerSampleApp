@@ -1,14 +1,15 @@
 <?php
 namespace SampleApp\Controllers;
 
+use SampleApp\Services\ImageService;
 use TigerKit\Models;
 
 class GalleryController extends BaseController
 {
   public function showList()
   {
-    $images = Models\Image::search()->exec();
-    $this->slim->render('gallery/list.phtml', ['images' => $images]);
+    $imageService = new ImageService();
+    $this->slim->render('gallery/list.phtml', ['images' => $imageService->getAllImages()]);
   }
 
   public function showUpload(){
@@ -18,9 +19,12 @@ class GalleryController extends BaseController
 
   public function doUpload(){
     Models\User::checkLoggedIn();
-    $image = Models\Image::CreateFromUpload($_FILES['file']);
-    \Kint::dump(Models\User::getCurrent());
-    $image->user_id = Models\User::getCurrent()->user_id;
-    $image->save();
+    $user = Models\User::getCurrent();
+    if($user instanceof Models\User) {
+      $imageService = new ImageService();
+      $imageService->uploadImage($user, $_FILES['file']);
+    }else{
+      $this->slim->notFound();
+    }
   }
 }

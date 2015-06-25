@@ -6,4 +6,4 @@ Databases:
 Caches:
     Default: { Type: Redis, Host: localhost, Port: 6379, Database: 5 }
 Storage:
-    Default: { Type: Zip, Location: Storage.zip }
+    Default: { Type: Zip, Location: assets/datablob.zip }
