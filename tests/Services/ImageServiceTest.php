@@ -6,7 +6,7 @@ use SampleApp\Services\ImageService;
 use TigerKit\Models\Image;
 use TigerKit\Test\TigerBaseTest;
 
-class ImageUploadTest extends TigerBaseTest
+class ImageServiceTest extends TigerBaseTest
 {
 
   /** @var ImageService */
