@@ -43,7 +43,7 @@ class UserService extends BaseService
    * @param $email
    * @return Models\User
    */
-  public function createUser($username, $realname, $password, $email){
+  public function createUser($username, $realname, $password, $email) {
     $user = new Models\User();
     $user->username = $username;
     $user->displayname = $realname;
