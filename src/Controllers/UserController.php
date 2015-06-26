@@ -22,9 +22,9 @@ class UserController extends BaseController
     $userService = new UserService();
     $username = $this->slim->request()->post('username');
     $password = $this->slim->request()->post('password');
-    if($userService->doLogin($username, $password)) {
+    if ($userService->doLogin($username, $password)) {
       $this->slim->redirect("/dashboard");
-    }else{
+    } else {
       $this->slim->redirect("/login?failed");
     }
   }
