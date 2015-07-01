@@ -3,6 +3,7 @@
 namespace SampleApp\Test\Storage;
 
 use SampleApp\Services\ImageService;
+use SampleApp\Services\TagService;
 use TigerKit\Models\Image;
 use TigerKit\Test\TigerBaseTest;
 
@@ -18,18 +19,23 @@ class ImageServiceTest extends TigerBaseTest
     $this->imageService = new ImageService();
   }
 
-  public function testUploadImage()
-  {
-    $mockAsset = APP_ROOT . "/tests/assets/sample-1.jpg";
+  private function makeMockUpload($mockAssetPath){
     $mockAssetTmpLocation = tempnam(sys_get_temp_dir(), "test-");
-    copy($mockAsset, $mockAssetTmpLocation);
+    copy($mockAssetPath, $mockAssetTmpLocation);
     $mockUpload = [
-      'name' => basename($mockAsset),
+      'name' => basename($mockAssetPath),
       'type' => "image/jpeg",
       'tmp_name' => $mockAssetTmpLocation,
       'error' => 0,
-      'size' => filesize($mockAsset),
+      'size' => filesize($mockAssetPath),
     ];
+    return $mockUpload;
+  }
+
+  public function testUploadImage()
+  {
+    $mockAsset = APP_ROOT . "/tests/assets/sample-1.jpg";
+    $mockUpload = $this->makeMockUpload($mockAsset);
 
     $image = $this->imageService->uploadImage($this->testUser, $mockUpload);
     $this->assertTrue($image instanceof Image);
@@ -89,6 +95,28 @@ class ImageServiceTest extends TigerBaseTest
     $mockAsset = APP_ROOT . "/tests/assets/sample-3.jpg";
     $image->putDataStream(fopen($mockAsset, 'r'));
     $this->assertEquals(filesize($mockAsset), $image->filesize);
+  }
+
+  public function testTagImages(){
+    $attackRabbitAsset = APP_ROOT . "/tests/assets/sample-1.jpg";
+    $attackRabbitMockUpload = $this->makeMockUpload($attackRabbitAsset);
+    $attackRabbitImage = $this->imageService->uploadImage($this->testUser, $attackRabbitMockUpload);
+
+    $carsAsset = APP_ROOT . "/tests/assets/sample-1.jpg";
+    $carsMockUpload = $this->makeMockUpload($carsAsset);
+    $carsImage = $this->imageService->uploadImage($this->testUser, $carsMockUpload);
+
+    $hompfCatAsset = APP_ROOT . "/tests/assets/sample-1.jpg";
+    $hompfCatMockUpload = $this->makeMockUpload($hompfCatAsset);
+    $hompfCatImage = $this->imageService->uploadImage($this->testUser, $hompfCatMockUpload);
+
+    $this->imageService->addTag($attackRabbitImage, TagService::CreateOrFind("rabbit"));
+    $this->imageService->addTag($carsImage, TagService::CreateOrFind("cars"));
+    $this->imageService->addTag($hompfCatImage, TagService::CreateOrFind("cat"));
+
+    $this->imageService->addTags([$attackRabbitImage, $carsImage, $hompfCatImage], "test");
+    $this->imageService->addTags([$attackRabbitImage, $carsImage, $hompfCatImage], ["test2"]);
+
   }
 
 }

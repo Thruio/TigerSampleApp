@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit bootstrap="bootstrap.php"
          colors="true"
-         stopOnFailure="false">
+         stopOnFailure="true">
   <testsuites>
-    <testsuite name="web">
-      <file>tests/Web/UserTest.php</file>
-      <file>tests/Web/IndexTest.php</file>
+    <testsuite name="tigerkit">
+      <directory>vendor/thru.io/tiger-kit/tests</directory>
     </testsuite>
     <testsuite name="services">
       <directory>tests/Services</directory>
     </testsuite>
-    <testsuite name="tigerkit">
-      <directory>vendor/thru.io/tiger-kit/tests</directory>
+    <testsuite name="web">
+      <file>tests/Web/UserTest.php</file>
+      <file>tests/Web/IndexTest.php</file>
     </testsuite>
   </testsuites>
 
