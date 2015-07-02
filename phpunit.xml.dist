@@ -12,6 +12,7 @@
     <testsuite name="web">
       <file>tests/Web/UserTest.php</file>
       <file>tests/Web/IndexTest.php</file>
+      <file>tests/Web/GalleryTest.php</file>
     </testsuite>
   </testsuites>
 
