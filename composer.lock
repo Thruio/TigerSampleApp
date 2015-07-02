@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "959ebde93ccb1bbb5152e56eecc4c1d57430f77c"
+                "reference": "e9614c38544a4cf994b921a75e6a55e4f4dc2d8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/959ebde93ccb1bbb5152e56eecc4c1d57430f77c",
-                "reference": "959ebde93ccb1bbb5152e56eecc4c1d57430f77c",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e9614c38544a4cf994b921a75e6a55e4f4dc2d8a",
+                "reference": "e9614c38544a4cf994b921a75e6a55e4f4dc2d8a",
                 "shasum": ""
             },
             "require": {
@@ -28,6 +28,7 @@
                 "php": ">=5.5"
             },
             "require-dev": {
+                "behat/behat": "~3.0",
                 "ext-dom": "*",
                 "ext-json": "*",
                 "ext-openssl": "*",
@@ -76,20 +77,20 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-06-24 23:31:20"
+            "time": "2015-07-01 02:11:49"
         },
         {
             "name": "dropbox/dropbox-sdk",
-            "version": "v1.1.5",
+            "version": "v1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dropbox/dropbox-sdk-php.git",
-                "reference": "138bfec02f042fa6a4b384c0ae7ebe92ad122bbd"
+                "reference": "6901f8122458e0ce7e391468c0cf6cca465bd0ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dropbox/dropbox-sdk-php/zipball/138bfec02f042fa6a4b384c0ae7ebe92ad122bbd",
-                "reference": "138bfec02f042fa6a4b384c0ae7ebe92ad122bbd",
+                "url": "https://api.github.com/repos/dropbox/dropbox-sdk-php/zipball/6901f8122458e0ce7e391468c0cf6cca465bd0ee",
+                "reference": "6901f8122458e0ce7e391468c0cf6cca465bd0ee",
                 "shasum": ""
             },
             "require": {
@@ -115,7 +116,7 @@
             "keywords": [
                 "dropbox"
             ],
-            "time": "2015-02-23 20:51:29"
+            "time": "2015-06-29 21:47:57"
         },
         {
             "name": "filp/whoops",
@@ -123,12 +124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "37b5e653c99cbb9113108d7dc59a0ddc306acc46"
+                "reference": "72538eeb70bbfb11964412a3d098d109efd012f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/37b5e653c99cbb9113108d7dc59a0ddc306acc46",
-                "reference": "37b5e653c99cbb9113108d7dc59a0ddc306acc46",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/72538eeb70bbfb11964412a3d098d109efd012f7",
+                "reference": "72538eeb70bbfb11964412a3d098d109efd012f7",
                 "shasum": ""
             },
             "require": {
@@ -173,7 +174,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2015-05-29 15:12:07"
+            "time": "2015-06-29 05:42:04"
         },
         {
             "name": "flynsarmy/slim-monolog",
@@ -279,12 +280,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "2ee5bc7f1a92efecc90da7f6711a53a7be26b5b7"
+                "reference": "f596be052ef429a16b2f640812fcf84392dd38f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/2ee5bc7f1a92efecc90da7f6711a53a7be26b5b7",
-                "reference": "2ee5bc7f1a92efecc90da7f6711a53a7be26b5b7",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/f596be052ef429a16b2f640812fcf84392dd38f7",
+                "reference": "f596be052ef429a16b2f640812fcf84392dd38f7",
                 "shasum": ""
             },
             "require": {
@@ -304,7 +305,7 @@
                     "GuzzleHttp\\Promise\\": "src/"
                 },
                 "files": [
-                    "src/functions.php"
+                    "src/functions_include.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -322,7 +323,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2015-06-24 16:16:25"
+            "time": "2015-06-30 16:39:54"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -576,12 +577,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "30539a698a833df93aa5f6cccd11becf20745b9a"
+                "reference": "e9babd47e287992ece27cfc97b6e10bfac908943"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/30539a698a833df93aa5f6cccd11becf20745b9a",
-                "reference": "30539a698a833df93aa5f6cccd11becf20745b9a",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/e9babd47e287992ece27cfc97b6e10bfac908943",
+                "reference": "e9babd47e287992ece27cfc97b6e10bfac908943",
                 "shasum": ""
             },
             "require": {
@@ -650,7 +651,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-06-13 12:22:01"
+            "time": "2015-06-25 18:33:43"
         },
         {
             "name": "league/flysystem-aws-s3-v3",
@@ -705,12 +706,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-dropbox.git",
-                "reference": "96c37124590bef6277c0e68a12e2dc40e5f82baa"
+                "reference": "e2ff644b9a25027a8357368a0c0ac8b370010708"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-dropbox/zipball/96c37124590bef6277c0e68a12e2dc40e5f82baa",
-                "reference": "96c37124590bef6277c0e68a12e2dc40e5f82baa",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-dropbox/zipball/e2ff644b9a25027a8357368a0c0ac8b370010708",
+                "reference": "e2ff644b9a25027a8357368a0c0ac8b370010708",
                 "shasum": ""
             },
             "require": {
@@ -744,7 +745,7 @@
                 }
             ],
             "description": "Flysystem adapter for Dropbox",
-            "time": "2015-05-30 09:18:29"
+            "time": "2015-06-26 18:43:43"
         },
         {
             "name": "league/flysystem-ziparchive",
@@ -798,12 +799,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "cc145b85fe1d1093f0bfa2d1dffb341904a1762b"
+                "reference": "ceeb33f5213d8ef383bb8f1d46a5922b4666c8aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/cc145b85fe1d1093f0bfa2d1dffb341904a1762b",
-                "reference": "cc145b85fe1d1093f0bfa2d1dffb341904a1762b",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/ceeb33f5213d8ef383bb8f1d46a5922b4666c8aa",
+                "reference": "ceeb33f5213d8ef383bb8f1d46a5922b4666c8aa",
                 "shasum": ""
             },
             "require": {
@@ -866,7 +867,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-06-22 17:09:57"
+            "time": "2015-06-30 22:26:19"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -1112,12 +1113,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/raveren/kint.git",
-                "reference": "98c11895778b63a0eb0d9fdccfb0ed4f7663daa8"
+                "reference": "0cb1329798c85df500e4dfac607c5d6834c18431"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/raveren/kint/zipball/98c11895778b63a0eb0d9fdccfb0ed4f7663daa8",
-                "reference": "98c11895778b63a0eb0d9fdccfb0ed4f7663daa8",
+                "url": "https://api.github.com/repos/raveren/kint/zipball/0cb1329798c85df500e4dfac607c5d6834c18431",
+                "reference": "0cb1329798c85df500e4dfac607c5d6834c18431",
                 "shasum": ""
             },
             "require": {
@@ -1155,7 +1156,7 @@
                 "kint",
                 "php"
             ],
-            "time": "2015-06-23 15:19:51"
+            "time": "2015-07-02 11:06:58"
         },
         {
             "name": "react/promise",
@@ -1203,16 +1204,16 @@
         },
         {
             "name": "slim/slim",
-            "version": "2.6.2",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slimphp/Slim.git",
-                "reference": "20a02782f76830b67ae56a5c08eb1f563c351a37"
+                "reference": "e6e2300586f909ef0e3b4017cdece27db5d6da28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slimphp/Slim/zipball/20a02782f76830b67ae56a5c08eb1f563c351a37",
-                "reference": "20a02782f76830b67ae56a5c08eb1f563c351a37",
+                "url": "https://api.github.com/repos/slimphp/Slim/zipball/e6e2300586f909ef0e3b4017cdece27db5d6da28",
+                "reference": "e6e2300586f909ef0e3b4017cdece27db5d6da28",
                 "shasum": ""
             },
             "require": {
@@ -1245,7 +1246,7 @@
                 "rest",
                 "router"
             ],
-            "time": "2015-03-08 18:41:17"
+            "time": "2015-05-14 21:04:50"
         },
         {
             "name": "stichoza/google-translate-php",
@@ -1498,7 +1499,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/TigerKit.git",
-                "reference": "59644820513ddb51f99bbfe157dc3e6623ba69e5"
+                "reference": "931386da4f22e7cbd81de870f3ad2793223f2ea0"
             },
             "require": {
                 "filp/whoops": "1.*",
@@ -1545,7 +1546,7 @@
                 }
             ],
             "description": "Starter kit using Slim, Active Record, Sessions, Translation, Docker all in a can.",
-            "time": "2015-06-25 14:35:14"
+            "time": "2015-07-02 13:17:41"
         },
         {
             "name": "thru.io/translation",
@@ -2040,12 +2041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "5a355f91730c845301a9e28f91c8a5053353c496"
+                "reference": "5700f75b23b0dd3495c0f495fe33a5e6717ee160"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/5a355f91730c845301a9e28f91c8a5053353c496",
-                "reference": "5a355f91730c845301a9e28f91c8a5053353c496",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/5700f75b23b0dd3495c0f495fe33a5e6717ee160",
+                "reference": "5700f75b23b0dd3495c0f495fe33a5e6717ee160",
                 "shasum": ""
             },
             "require": {
@@ -2092,7 +2093,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2015-05-20 16:00:43"
+            "time": "2015-06-30 10:26:46"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -2906,12 +2907,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "511051bc12a8a49704c19565d05a8377a780cee8"
+                "reference": "d9d4627a1dcdeb2562ca438c0b067e428a8ffd68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/511051bc12a8a49704c19565d05a8377a780cee8",
-                "reference": "511051bc12a8a49704c19565d05a8377a780cee8",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/d9d4627a1dcdeb2562ca438c0b067e428a8ffd68",
+                "reference": "d9d4627a1dcdeb2562ca438c0b067e428a8ffd68",
                 "shasum": ""
             },
             "require": {
@@ -2948,7 +2949,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2015-06-18 16:43:51"
+            "time": "2015-07-01 20:40:29"
         },
         {
             "name": "symfony/console",
@@ -2956,12 +2957,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "6fb9d5a32d3330b9dd598587c52bac6fbca193fe"
+                "reference": "edf20d4b7f28577c06ffba2df5f8254643d0de0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/6fb9d5a32d3330b9dd598587c52bac6fbca193fe",
-                "reference": "6fb9d5a32d3330b9dd598587c52bac6fbca193fe",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/edf20d4b7f28577c06ffba2df5f8254643d0de0b",
+                "reference": "edf20d4b7f28577c06ffba2df5f8254643d0de0b",
                 "shasum": ""
             },
             "require": {
@@ -3005,7 +3006,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-06-19 15:19:52"
+            "time": "2015-07-01 20:40:29"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3071,12 +3072,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "24fc9ecf8ed33772e0744397ba976cae95240a3b"
+                "reference": "eda46c137125a18f951fcf73248ce3edb9d37330"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/24fc9ecf8ed33772e0744397ba976cae95240a3b",
-                "reference": "24fc9ecf8ed33772e0744397ba976cae95240a3b",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/eda46c137125a18f951fcf73248ce3edb9d37330",
+                "reference": "eda46c137125a18f951fcf73248ce3edb9d37330",
                 "shasum": ""
             },
             "require": {
@@ -3112,7 +3113,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2015-06-18 16:25:07"
+            "time": "2015-07-01 20:40:29"
         },
         {
             "name": "symfony/stopwatch",
@@ -3120,12 +3121,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Stopwatch.git",
-                "reference": "432f3efeed399ba42f532b86c5ce63eb0fc99a4a"
+                "reference": "5a343d48394e3a374f8659ecb2aa9f623d5f4451"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/432f3efeed399ba42f532b86c5ce63eb0fc99a4a",
-                "reference": "432f3efeed399ba42f532b86c5ce63eb0fc99a4a",
+                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/5a343d48394e3a374f8659ecb2aa9f623d5f4451",
+                "reference": "5a343d48394e3a374f8659ecb2aa9f623d5f4451",
                 "shasum": ""
             },
             "require": {
@@ -3161,7 +3162,7 @@
             ],
             "description": "Symfony Stopwatch Component",
             "homepage": "https://symfony.com",
-            "time": "2015-06-04 20:30:47"
+            "time": "2015-07-01 20:40:29"
         }
     ],
     "aliases": [],
