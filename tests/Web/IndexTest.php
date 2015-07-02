@@ -26,6 +26,10 @@ class IndexTest extends BaseWebTest
     $this->assertEquals(302, $loginResponse->getStatus());
     $this->assertEquals("/dashboard", $loginResponse->header("location"));
 
+    $homepageRedirectResponse = $this->doRequest("GET", "/");
+    $this->assertEquals(302, $homepageRedirectResponse->getStatus());
+    $this->assertEquals("/dashboard", $homepageRedirectResponse->header("location"));
+
   }
 
 }
