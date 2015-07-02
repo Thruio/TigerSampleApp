@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="bootstrap.php"
+<phpunit bootstrap="test-bootstrap.php"
          colors="true"
          stopOnFailure="true">
   <testsuites>
+    <testsuite name="active-record">
+      <directory>vendor/thru.io/active_record/tests</directory>
+      <exclude>vendor/thru.io/active_record/tests/Configuration</exclude>
+    </testsuite>
     <testsuite name="tigerkit">
       <directory>vendor/thru.io/tiger-kit/tests</directory>
     </testsuite>
@@ -13,6 +17,9 @@
       <file>tests/Web/UserTest.php</file>
       <file>tests/Web/IndexTest.php</file>
       <file>tests/Web/GalleryTest.php</file>
+    </testsuite>
+    <testsuite name="stragglers">
+      <directory>vendor/thru.io/active_record/tests/Configuration</directory>
     </testsuite>
   </testsuites>
 
@@ -25,7 +32,7 @@
     <blacklist>
       <directory>vendor</directory>
       <directory>tests</directory>
-      <directory>vendor/thru.io/tiger-kittests</directory>
+      <directory>vendor/thru.io/tiger-kit/tests</directory>
       <exclude>
         <directory>vendor/thru.io/tiger-kit</directory>
       </exclude>
