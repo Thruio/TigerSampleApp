@@ -2,7 +2,7 @@
 
 namespace SampleApp\Test\Web;
 
-use SampleApp\Services\UserService;
+use TigerKit\Services\UserService;
 
 class UserTest extends BaseWebTest
 {

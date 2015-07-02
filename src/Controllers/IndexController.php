@@ -12,7 +12,7 @@ class IndexController extends BaseController
     $this->slim->log->debug("Index page accessed from {$this->slim->request()->getIp()}");
 
     if ($user instanceof Models\User) {
-      $this->slim->redirect("dashboard");
+      $this->slim->response()->redirect("dashboard");
     } else {
       $this->slim->render('home/home.phtml', array());
     }

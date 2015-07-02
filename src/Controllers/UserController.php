@@ -1,7 +1,7 @@
 <?php
 namespace SampleApp\Controllers;
 
-use SampleApp\Services\UserService;
+use TigerKit\Services\UserService;
 use Slim\Log;
 use TigerKit\Models;
 use TigerKit\TigerApp;
@@ -23,9 +23,9 @@ class UserController extends BaseController
     $username = $this->slim->request()->post('username');
     $password = $this->slim->request()->post('password');
     if ($userService->doLogin($username, $password)) {
-      $this->slim->redirect("/dashboard");
+      $this->slim->response()->redirect("/dashboard");
     } else {
-      $this->slim->redirect("/login?failed");
+      $this->slim->response()->redirect("/login?failed");
     }
   }
 
@@ -40,13 +40,13 @@ class UserController extends BaseController
   public function doRegister()
   {
     if ($this->slim->request()->post('password') !== $this->slim->request()->post('password2')) {
-      $this->slim->redirect("/register?failed=" . urlencode("Passwords do not match"));
+      $this->slim->response()->redirect("/register?failed=" . urlencode("Passwords do not match"));
     } elseif (Models\User::search()->where('username', $this->slim->request()->post('username'))->count() > 0) {
-      $this->slim->redirect("/register?failed=" . urlencode("Username in use."));
+      $this->slim->response()->redirect("/register?failed=" . urlencode("Username in use."));
     } elseif (strlen($this->slim->request()->post('password')) < 6) {
-      $this->slim->redirect("/register?failed=" . urlencode("Password has to be atleast 6 characters"));
+      $this->slim->response()->redirect("/register?failed=" . urlencode("Password has to be atleast 6 characters"));
     } elseif (!filter_var($this->slim->request()->post('email'), FILTER_VALIDATE_EMAIL)) {
-      $this->slim->redirect("/register?failed=" . urlencode("Email address invalid"));
+      $this->slim->response()->redirect("/register?failed=" . urlencode("Email address invalid"));
     } else {
       $userService = new UserService();
       $user = $userService->createUser(
@@ -56,7 +56,7 @@ class UserController extends BaseController
         $this->slim->request()->post('email')
       );
       Session::set("user", $user);
-      $this->slim->redirect("/dashboard");
+      $this->slim->response()->redirect("/dashboard");
     }
   }
 
@@ -68,6 +68,6 @@ class UserController extends BaseController
     }
 
     Session::dispose('user');
-    $this->slim->redirect("/login");
+    $this->slim->response()->redirect("/login");
   }
 }

@@ -1,7 +1,7 @@
 <?php
 namespace SampleApp\Controllers;
 
-use SampleApp\Services\ImageService;
+use TigerKit\Services\ImageService;
 use TigerKit\Models;
 
 class GalleryController extends BaseController
