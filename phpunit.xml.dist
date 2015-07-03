@@ -33,8 +33,10 @@
       <directory>vendor</directory>
       <directory>tests</directory>
       <directory>vendor/thru.io/tiger-kit/tests</directory>
+      <directory>vendor/thru.io/active_record/tests</directory>
       <exclude>
         <directory>vendor/thru.io/tiger-kit</directory>
+        <directory>vendor/thru.io/active_record</directory>
       </exclude>
     </blacklist>
   </filter>
