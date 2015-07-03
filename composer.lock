@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e45649d778f81ac6a81b6fdc2fd19aa7",
+    "hash": "286b58fcd3460065c965f24505a1bb2e",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1998,6 +1998,56 @@
             "time": "2015-04-29 17:06:53"
         },
         {
+            "name": "johnkary/phpunit-speedtrap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnkary/phpunit-speedtrap.git",
+                "reference": "ad70c60c6d77ddd51e6aca9fdf165538e43b0193"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnkary/phpunit-speedtrap/zipball/ad70c60c6d77ddd51e6aca9fdf165538e43b0193",
+                "reference": "ad70c60c6d77ddd51e6aca9fdf165538e43b0193",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*|~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "JohnKary": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "John Kary",
+                    "email": "john@johnkary.net"
+                }
+            ],
+            "description": "Find slow tests in your PHPUnit test suite",
+            "homepage": "https://github.com/johnkary/phpunit-speedtrap",
+            "keywords": [
+                "phpunit",
+                "profile",
+                "slow"
+            ],
+            "time": "2015-03-21 19:00:39"
+        },
+        {
             "name": "phpdocumentor/reflection-docblock",
             "version": "2.0.4",
             "source": {
@@ -3181,7 +3231,8 @@
     "stability-flags": {
         "thru.io/tiger-kit": 20,
         "codeclimate/php-test-reporter": 20,
-        "fzaninotto/faker": 20
+        "fzaninotto/faker": 20,
+        "johnkary/phpunit-speedtrap": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
