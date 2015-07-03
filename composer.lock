@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "18a0a1932331b10dacf87b396111d35cf491fc1a"
+                "reference": "f2bed7e4079754f4cdf1feae01ca2d2945a04c61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/18a0a1932331b10dacf87b396111d35cf491fc1a",
-                "reference": "18a0a1932331b10dacf87b396111d35cf491fc1a",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f2bed7e4079754f4cdf1feae01ca2d2945a04c61",
+                "reference": "f2bed7e4079754f4cdf1feae01ca2d2945a04c61",
                 "shasum": ""
             },
             "require": {
@@ -77,7 +77,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-07-02 16:08:13"
+            "time": "2015-07-02 22:36:39"
         },
         {
             "name": "dropbox/dropbox-sdk",
@@ -976,12 +976,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "c4c36cae7ab09bdeef7f85b1c3d55fe120aa1117"
+                "reference": "77b75e07388d9ec1de0893d43de5ff35729a2137"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/c4c36cae7ab09bdeef7f85b1c3d55fe120aa1117",
-                "reference": "c4c36cae7ab09bdeef7f85b1c3d55fe120aa1117",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/77b75e07388d9ec1de0893d43de5ff35729a2137",
+                "reference": "77b75e07388d9ec1de0893d43de5ff35729a2137",
                 "shasum": ""
             },
             "require": {
@@ -1018,7 +1018,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2015-01-02 12:54:29"
+            "time": "2015-07-03 10:11:45"
         },
         {
             "name": "psr/http-message",
@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/ActiveRecord.git",
-                "reference": "82ecaf1bbf6cba331066280d7f9360296e8adac5"
+                "reference": "e32265796aa8d6561ce446a77fa3ba731436b34f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Thruio/ActiveRecord/zipball/82ecaf1bbf6cba331066280d7f9360296e8adac5",
-                "reference": "82ecaf1bbf6cba331066280d7f9360296e8adac5",
+                "url": "https://api.github.com/repos/Thruio/ActiveRecord/zipball/e32265796aa8d6561ce446a77fa3ba731436b34f",
+                "reference": "e32265796aa8d6561ce446a77fa3ba731436b34f",
                 "shasum": ""
             },
             "require": {
@@ -1368,6 +1368,7 @@
             "require-dev": {
                 "codeclimate/php-test-reporter": "dev-master",
                 "fzaninotto/faker": "1.5.*@dev",
+                "johnkary/phpunit-speedtrap": "~1.0@dev",
                 "monolog/monolog": ">=1.6.0",
                 "phpunit/phpunit": "*",
                 "raveren/kint": "dev-master"
@@ -1386,7 +1387,7 @@
                 }
             ],
             "description": "An active-record like implementation",
-            "time": "2015-07-02 14:49:21"
+            "time": "2015-07-03 10:28:44"
         },
         {
             "name": "thru.io/active_record_migrations",
@@ -1507,7 +1508,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/TigerKit.git",
-                "reference": "33eb5b2d07e26e5444a3d121b8b7744a2c1eac6f"
+                "reference": "a9e8faba2a9c86da53bcd81ff0abee729bce5c71"
             },
             "require": {
                 "filp/whoops": "1.*",
@@ -1554,7 +1555,7 @@
                 }
             ],
             "description": "Starter kit using Slim, Active Record, Sessions, Translation, Docker all in a can.",
-            "time": "2015-07-02 15:41:59"
+            "time": "2015-07-03 10:28:17"
         },
         {
             "name": "thru.io/translation",
