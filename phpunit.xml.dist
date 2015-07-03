@@ -5,7 +5,6 @@
   <testsuites>
     <testsuite name="active-record">
       <directory>vendor/thru.io/active_record/tests</directory>
-      <exclude>vendor/thru.io/active_record/tests/Configuration</exclude>
     </testsuite>
     <testsuite name="tigerkit">
       <directory>vendor/thru.io/tiger-kit/tests</directory>
@@ -17,9 +16,6 @@
       <file>tests/Web/UserTest.php</file>
       <file>tests/Web/IndexTest.php</file>
       <file>tests/Web/GalleryTest.php</file>
-    </testsuite>
-    <testsuite name="stragglers">
-      <directory>vendor/thru.io/active_record/tests/Configuration</directory>
     </testsuite>
   </testsuites>
 
