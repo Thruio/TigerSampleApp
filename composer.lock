@@ -1160,16 +1160,16 @@
         },
         {
             "name": "react/promise",
-            "version": "v2.2.0",
+            "version": "v2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise.git",
-                "reference": "365fcee430dfa4ace1fbc75737ca60ceea7eeeef"
+                "reference": "3b6fca09c7d56321057fa8867c8dbe1abf648627"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/365fcee430dfa4ace1fbc75737ca60ceea7eeeef",
-                "reference": "365fcee430dfa4ace1fbc75737ca60ceea7eeeef",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/3b6fca09c7d56321057fa8867c8dbe1abf648627",
+                "reference": "3b6fca09c7d56321057fa8867c8dbe1abf648627",
                 "shasum": ""
             },
             "require": {
@@ -1196,11 +1196,11 @@
             "authors": [
                 {
                     "name": "Jan Sorgalla",
-                    "email": "jsorgalla@googlemail.com"
+                    "email": "jsorgalla@gmail.com"
                 }
             ],
             "description": "A lightweight implementation of CommonJS Promises/A for PHP",
-            "time": "2014-12-30 13:32:42"
+            "time": "2015-07-03 13:48:55"
         },
         {
             "name": "slim/slim",
@@ -1353,12 +1353,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/ActiveRecord.git",
-                "reference": "e32265796aa8d6561ce446a77fa3ba731436b34f"
+                "reference": "e71a0ec69c00f2d3cfef72181a84bb21b327906b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Thruio/ActiveRecord/zipball/e32265796aa8d6561ce446a77fa3ba731436b34f",
-                "reference": "e32265796aa8d6561ce446a77fa3ba731436b34f",
+                "url": "https://api.github.com/repos/Thruio/ActiveRecord/zipball/e71a0ec69c00f2d3cfef72181a84bb21b327906b",
+                "reference": "e71a0ec69c00f2d3cfef72181a84bb21b327906b",
                 "shasum": ""
             },
             "require": {
@@ -1387,7 +1387,7 @@
                 }
             ],
             "description": "An active-record like implementation",
-            "time": "2015-07-03 10:28:44"
+            "time": "2015-07-03 14:00:58"
         },
         {
             "name": "thru.io/active_record_migrations",
@@ -1508,7 +1508,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/TigerKit.git",
-                "reference": "21230112ffafb7e41774810197c8ea3c044fcb14"
+                "reference": "d73c3b50de760d08106ab2c2a47dc80741282198"
             },
             "require": {
                 "filp/whoops": "1.*",
@@ -1555,7 +1555,7 @@
                 }
             ],
             "description": "Starter kit using Slim, Active Record, Sessions, Translation, Docker all in a can.",
-            "time": "2015-07-03 12:28:43"
+            "time": "2015-07-03 13:32:04"
         },
         {
             "name": "thru.io/translation",
