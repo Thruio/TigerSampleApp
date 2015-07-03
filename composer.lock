@@ -1508,7 +1508,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/TigerKit.git",
-                "reference": "a9e8faba2a9c86da53bcd81ff0abee729bce5c71"
+                "reference": "761e1faf563d7788fe141ee2994b393c31876efa"
             },
             "require": {
                 "filp/whoops": "1.*",
@@ -1555,7 +1555,7 @@
                 }
             ],
             "description": "Starter kit using Slim, Active Record, Sessions, Translation, Docker all in a can.",
-            "time": "2015-07-03 10:28:17"
+            "time": "2015-07-03 11:35:35"
         },
         {
             "name": "thru.io/translation",
