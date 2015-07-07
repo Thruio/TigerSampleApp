@@ -19,3 +19,8 @@ use SampleApp\Controllers;
 \TigerKit\TigerApp::getSlimApp()->get('/gallery', '\SampleApp\Controllers\GalleryController:showList');
 \TigerKit\TigerApp::getSlimApp()->get('/gallery/upload', '\SampleApp\Controllers\GalleryController:showUpload');
 \TigerKit\TigerApp::getSlimApp()->post('/gallery/upload', '\SampleApp\Controllers\GalleryController:doUpload');
+
+# Boards
+\TigerKit\TigerApp::getSlimApp()->get('/r', '\SampleApp\Controllers\BoardController:showHomepage');
+\TigerKit\TigerApp::getSlimApp()->get('/r/:board', '\SampleApp\Controllers\BoardController:showBoard');
+\TigerKit\TigerApp::getSlimApp()->get('/r/:board/:thread', '\SampleApp\Controllers\BoardController:showThread');
