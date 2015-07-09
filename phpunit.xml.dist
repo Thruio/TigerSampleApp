@@ -9,8 +9,13 @@
     <testsuite name="tigerkit">
       <directory>vendor/thru.io/tiger-kit/tests</directory>
     </testsuite>
+    <testsuite name="models">
+      <directory>tests/Models</directory>
+      <directory>vendor/thru.io/tiger-kit/tests/Models</directory>
+    </testsuite>
     <testsuite name="services">
       <directory>tests/Services</directory>
+      <directory>vendor/thru.io/tiger-kit/tests/Services</directory>
     </testsuite>
     <testsuite name="web">
       <file>tests/Web/UserTest.php</file>
