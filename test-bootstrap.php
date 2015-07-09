@@ -10,6 +10,8 @@ $fileLoggerHandler = new LogHandler\StreamHandler(__DIR__ . "/build/logs/starter
 $monologHandlers = [$fileLoggerHandler];
 $monolog = new Logger("StarterApp", $monologHandlers);
 
+$redisConnector = new Predis\Client();
+
 $database = new \Thru\ActiveRecord\DatabaseLayer(array(
   'db_type'     => 'Mysql',
   'db_hostname' => 'localhost',
@@ -20,5 +22,7 @@ $database = new \Thru\ActiveRecord\DatabaseLayer(array(
 ));
 
 $database->setLogger($monolog);
+
+$database->setCache($redisConnector);
 
 \Thru\ActiveRecord\DatabaseLayer::setInstance($database);
