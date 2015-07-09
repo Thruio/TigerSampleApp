@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "f2bed7e4079754f4cdf1feae01ca2d2945a04c61"
+                "reference": "0d0cd3866c7c2b8d95a26a2e047c46a2a16e1d3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f2bed7e4079754f4cdf1feae01ca2d2945a04c61",
-                "reference": "f2bed7e4079754f4cdf1feae01ca2d2945a04c61",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0d0cd3866c7c2b8d95a26a2e047c46a2a16e1d3e",
+                "reference": "0d0cd3866c7c2b8d95a26a2e047c46a2a16e1d3e",
                 "shasum": ""
             },
             "require": {
@@ -77,7 +77,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-07-02 22:36:39"
+            "time": "2015-07-07 19:54:50"
         },
         {
             "name": "dropbox/dropbox-sdk",
@@ -577,22 +577,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "e9babd47e287992ece27cfc97b6e10bfac908943"
+                "reference": "3a57958cb1d07cada4f1ca34f968c52e98532209"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/e9babd47e287992ece27cfc97b6e10bfac908943",
-                "reference": "e9babd47e287992ece27cfc97b6e10bfac908943",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/3a57958cb1d07cada4f1ca34f968c52e98532209",
+                "reference": "3a57958cb1d07cada4f1ca34f968c52e98532209",
                 "shasum": ""
             },
             "require": {
-                "ext-mbstring": "*",
                 "php": ">=5.4.0"
             },
             "require-dev": {
                 "ext-fileinfo": "*",
                 "mockery/mockery": "~0.9",
-                "phpspec/phpspec": "~2.0",
+                "phpspec/phpspec": "^2.2",
                 "phpspec/prophecy-phpunit": "~1.0",
                 "phpunit/phpunit": "~4.1"
             },
@@ -651,7 +650,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-06-25 18:33:43"
+            "time": "2015-07-08 20:50:13"
         },
         {
             "name": "league/flysystem-aws-s3-v3",
@@ -659,12 +658,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-aws-s3-v3.git",
-                "reference": "ca73c3339ef37de82b511ab9e5d693b56c6f8780"
+                "reference": "e8e27d07bba47d29ca064b5f9dd06273fbaf7f62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/ca73c3339ef37de82b511ab9e5d693b56c6f8780",
-                "reference": "ca73c3339ef37de82b511ab9e5d693b56c6f8780",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/e8e27d07bba47d29ca064b5f9dd06273fbaf7f62",
+                "reference": "e8e27d07bba47d29ca064b5f9dd06273fbaf7f62",
                 "shasum": ""
             },
             "require": {
@@ -698,7 +697,7 @@
                 }
             ],
             "description": "Flysystem adapter for the AWS S3 SDK v3.x",
-            "time": "2015-06-16 21:13:42"
+            "time": "2015-07-07 20:11:47"
         },
         {
             "name": "league/flysystem-dropbox",
@@ -799,12 +798,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "ceeb33f5213d8ef383bb8f1d46a5922b4666c8aa"
+                "reference": "6dd76b944d42d7b27bb3d09cd0f6fa88a80817f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/ceeb33f5213d8ef383bb8f1d46a5922b4666c8aa",
-                "reference": "ceeb33f5213d8ef383bb8f1d46a5922b4666c8aa",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/6dd76b944d42d7b27bb3d09cd0f6fa88a80817f5",
+                "reference": "6dd76b944d42d7b27bb3d09cd0f6fa88a80817f5",
                 "shasum": ""
             },
             "require": {
@@ -867,7 +866,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-06-30 22:26:19"
+            "time": "2015-07-05 21:09:41"
         },
         {
             "name": "mtdowling/jmespath.php",
@@ -976,16 +975,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "77b75e07388d9ec1de0893d43de5ff35729a2137"
+                "reference": "90bffb1a5ab3ff99a3b352eae81b5687b863f215"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/77b75e07388d9ec1de0893d43de5ff35729a2137",
-                "reference": "77b75e07388d9ec1de0893d43de5ff35729a2137",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/90bffb1a5ab3ff99a3b352eae81b5687b863f215",
+                "reference": "90bffb1a5ab3ff99a3b352eae81b5687b863f215",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": ">=5.3.9"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.0"
@@ -995,6 +994,11 @@
                 "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Predis\\": "src/"
@@ -1018,7 +1022,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2015-07-03 10:11:45"
+            "time": "2015-07-07 16:51:44"
         },
         {
             "name": "psr/http-message",
@@ -1113,12 +1117,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/raveren/kint.git",
-                "reference": "0cb1329798c85df500e4dfac607c5d6834c18431"
+                "reference": "f5f48fa101845671aa8596b40a49713ddefcc77d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/raveren/kint/zipball/0cb1329798c85df500e4dfac607c5d6834c18431",
-                "reference": "0cb1329798c85df500e4dfac607c5d6834c18431",
+                "url": "https://api.github.com/repos/raveren/kint/zipball/f5f48fa101845671aa8596b40a49713ddefcc77d",
+                "reference": "f5f48fa101845671aa8596b40a49713ddefcc77d",
                 "shasum": ""
             },
             "require": {
@@ -1156,7 +1160,7 @@
                 "kint",
                 "php"
             ],
-            "time": "2015-07-02 11:06:58"
+            "time": "2015-07-05 17:56:29"
         },
         {
             "name": "react/promise",
@@ -1353,12 +1357,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/ActiveRecord.git",
-                "reference": "e71a0ec69c00f2d3cfef72181a84bb21b327906b"
+                "reference": "cc1b68fc64b881609e6a1dbdeb7dcacc0b8e2f41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Thruio/ActiveRecord/zipball/e71a0ec69c00f2d3cfef72181a84bb21b327906b",
-                "reference": "e71a0ec69c00f2d3cfef72181a84bb21b327906b",
+                "url": "https://api.github.com/repos/Thruio/ActiveRecord/zipball/cc1b68fc64b881609e6a1dbdeb7dcacc0b8e2f41",
+                "reference": "cc1b68fc64b881609e6a1dbdeb7dcacc0b8e2f41",
                 "shasum": ""
             },
             "require": {
@@ -1366,12 +1370,16 @@
                 "thru.io/uuid": "1.0"
             },
             "require-dev": {
+                "brianium/paratest": "dev-master",
                 "codeclimate/php-test-reporter": "dev-master",
+                "fiunchinho/phpunit-randomizer": "dev-master",
                 "fzaninotto/faker": "1.5.*@dev",
                 "johnkary/phpunit-speedtrap": "~1.0@dev",
+                "lstrojny/phpunit-clever-and-smart": "0.*",
                 "monolog/monolog": ">=1.6.0",
-                "phpunit/phpunit": "*",
-                "raveren/kint": "dev-master"
+                "phpunit/phpunit": ">=4.7",
+                "raveren/kint": "dev-master",
+                "squizlabs/php_codesniffer": "*"
             },
             "type": "library",
             "autoload": {
@@ -1387,7 +1395,7 @@
                 }
             ],
             "description": "An active-record like implementation",
-            "time": "2015-07-03 14:00:58"
+            "time": "2015-07-08 18:20:35"
         },
         {
             "name": "thru.io/active_record_migrations",
@@ -1508,7 +1516,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/TigerKit.git",
-                "reference": "d73c3b50de760d08106ab2c2a47dc80741282198"
+                "reference": "a568d3fe5e591dc121e56571450adb672dc9394a"
             },
             "require": {
                 "filp/whoops": "1.*",
@@ -1522,7 +1530,7 @@
                 "raveren/kint": "dev-master",
                 "slim/slim": "~2.6",
                 "symfony/yaml": "2.6.6",
-                "thru.io/active_record": ">=0.3",
+                "thru.io/active_record": ">=0.4",
                 "thru.io/active_record_migrations": "dev-master",
                 "thru.io/session": "dev-master",
                 "thru.io/translation": "dev-master",
@@ -1555,7 +1563,7 @@
                 }
             ],
             "description": "Starter kit using Slim, Active Record, Sessions, Translation, Docker all in a can.",
-            "time": "2015-07-03 13:32:04"
+            "time": "2015-07-09 09:43:25"
         },
         {
             "name": "thru.io/translation",
@@ -2402,12 +2410,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "21b619c6f0386a06d1646f401a398af3d33fc047"
+                "reference": "dbf851f497ed0055290f70c5a9d4877967405884"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/21b619c6f0386a06d1646f401a398af3d33fc047",
-                "reference": "21b619c6f0386a06d1646f401a398af3d33fc047",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/dbf851f497ed0055290f70c5a9d4877967405884",
+                "reference": "dbf851f497ed0055290f70c5a9d4877967405884",
                 "shasum": ""
             },
             "require": {
@@ -2466,7 +2474,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-25 05:24:49"
+            "time": "2015-07-06 05:45:08"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2474,18 +2482,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "a1304c50e6982bf6d1fa5131ee276bbc6229d80b"
+                "reference": "e4862226480f86ea18ef773212ec1e2acd42ba64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/a1304c50e6982bf6d1fa5131ee276bbc6229d80b",
-                "reference": "a1304c50e6982bf6d1fa5131ee276bbc6229d80b",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/e4862226480f86ea18ef773212ec1e2acd42ba64",
+                "reference": "e4862226480f86ea18ef773212ec1e2acd42ba64",
                 "shasum": ""
             },
             "require": {
                 "doctrine/instantiator": "~1.0,>=1.0.2",
                 "php": ">=5.3.3",
-                "phpunit/php-text-template": "~1.2"
+                "phpunit/php-text-template": "~1.2",
+                "sebastian/exporter": "~1.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.4"
@@ -2521,7 +2530,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-06-21 08:04:07"
+            "time": "2015-07-04 15:35:39"
         },
         {
             "name": "satooshi/php-coveralls",
