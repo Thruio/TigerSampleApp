@@ -6,12 +6,6 @@ use Monolog\Logger;
 use Monolog\Handler as LogHandler;
 use Monolog\Formatter as LogFormatter;
 
-$fileLoggerHandler = new LogHandler\StreamHandler(__DIR__ . "/build/logs/starterapp." . date('Y-m-d') . '.log', null, null, 0664);
-$monologHandlers = [$fileLoggerHandler];
-$monolog = new Logger("StarterApp", $monologHandlers);
-
-$redisConnector = new Predis\Client();
-
 $database = new \Thru\ActiveRecord\DatabaseLayer(array(
   'db_type'     => 'Mysql',
   'db_hostname' => 'localhost',
@@ -21,8 +15,20 @@ $database = new \Thru\ActiveRecord\DatabaseLayer(array(
   'db_database' => 'starterapp_test',
 ));
 
+// Configure Logging
+$fileLoggerHandler = new LogHandler\StreamHandler(__DIR__ . "/build/logs/starterapp." . date('Y-m-d') . '.log', null, null, 0664);
+$monologHandlers = [$fileLoggerHandler];
+$monolog = new Logger("StarterApp", $monologHandlers);
 $database->setLogger($monolog);
 
-$database->setCache($redisConnector);
+// Configure Redis.
+$redis = new Redis();
+$redis->pconnect("localhost", 6379, 0.0);
 
+$cache = new Doctrine\Common\Cache\RedisCache();
+$cache->setRedis($redis);
+
+$database->setCache($cache);
+
+// Set instance.
 \Thru\ActiveRecord\DatabaseLayer::setInstance($database);
