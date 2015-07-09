@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a1cf393c2576b664e2403aa9842b8882",
+    "hash": "286b58fcd3460065c965f24505a1bb2e",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -577,12 +577,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "258dfa65f0b0a471618ae7af1e6cb775df34ad1c"
+                "reference": "3a57958cb1d07cada4f1ca34f968c52e98532209"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/258dfa65f0b0a471618ae7af1e6cb775df34ad1c",
-                "reference": "258dfa65f0b0a471618ae7af1e6cb775df34ad1c",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/3a57958cb1d07cada4f1ca34f968c52e98532209",
+                "reference": "3a57958cb1d07cada4f1ca34f968c52e98532209",
                 "shasum": ""
             },
             "require": {
@@ -591,7 +591,7 @@
             "require-dev": {
                 "ext-fileinfo": "*",
                 "mockery/mockery": "~0.9",
-                "phpspec/phpspec": "~2.0",
+                "phpspec/phpspec": "^2.2",
                 "phpspec/prophecy-phpunit": "~1.0",
                 "phpunit/phpunit": "~4.1"
             },
@@ -650,7 +650,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2015-07-07 19:11:31"
+            "time": "2015-07-08 20:50:13"
         },
         {
             "name": "league/flysystem-aws-s3-v3",
@@ -1357,12 +1357,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/ActiveRecord.git",
-                "reference": "4e7c967f65d61d46344d8fb26e4314e30c31339e"
+                "reference": "cc1b68fc64b881609e6a1dbdeb7dcacc0b8e2f41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Thruio/ActiveRecord/zipball/4e7c967f65d61d46344d8fb26e4314e30c31339e",
-                "reference": "4e7c967f65d61d46344d8fb26e4314e30c31339e",
+                "url": "https://api.github.com/repos/Thruio/ActiveRecord/zipball/cc1b68fc64b881609e6a1dbdeb7dcacc0b8e2f41",
+                "reference": "cc1b68fc64b881609e6a1dbdeb7dcacc0b8e2f41",
                 "shasum": ""
             },
             "require": {
@@ -1370,12 +1370,16 @@
                 "thru.io/uuid": "1.0"
             },
             "require-dev": {
+                "brianium/paratest": "dev-master",
                 "codeclimate/php-test-reporter": "dev-master",
+                "fiunchinho/phpunit-randomizer": "dev-master",
                 "fzaninotto/faker": "1.5.*@dev",
                 "johnkary/phpunit-speedtrap": "~1.0@dev",
+                "lstrojny/phpunit-clever-and-smart": "0.*",
                 "monolog/monolog": ">=1.6.0",
-                "phpunit/phpunit": "*",
-                "raveren/kint": "dev-master"
+                "phpunit/phpunit": ">=4.7",
+                "raveren/kint": "dev-master",
+                "squizlabs/php_codesniffer": "*"
             },
             "type": "library",
             "autoload": {
@@ -1391,7 +1395,7 @@
                 }
             ],
             "description": "An active-record like implementation",
-            "time": "2015-07-07 12:08:02"
+            "time": "2015-07-08 18:20:35"
         },
         {
             "name": "thru.io/active_record_migrations",
@@ -1399,18 +1403,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/ActiveRecordMigrations.git",
-                "reference": "0bb97b0d5dc50ee7f0f64c9821fd2d20edcd7493"
+                "reference": "4a9a2978b2318d31e08109dc4a3ddb03bac430ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Thruio/ActiveRecordMigrations/zipball/0bb97b0d5dc50ee7f0f64c9821fd2d20edcd7493",
-                "reference": "0bb97b0d5dc50ee7f0f64c9821fd2d20edcd7493",
+                "url": "https://api.github.com/repos/Thruio/ActiveRecordMigrations/zipball/4a9a2978b2318d31e08109dc4a3ddb03bac430ad",
+                "reference": "4a9a2978b2318d31e08109dc4a3ddb03bac430ad",
                 "shasum": ""
             },
             "require": {
                 "nategood/commando": "*",
                 "symfony/yaml": "2.6.6",
-                "thru.io/active_record": ">=0.2"
+                "thru.io/active_record": ">=0.4"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "dev-master",
@@ -1434,7 +1438,7 @@
                 }
             ],
             "description": "Migrations for Active Record",
-            "time": "2015-07-02 15:29:31"
+            "time": "2015-07-09 09:45:35"
         },
         {
             "name": "thru.io/json-pretty-printer",
@@ -1512,7 +1516,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/TigerKit.git",
-                "reference": "2c724e344871804a755f0b523f0454fbb23764f4"
+                "reference": "a568d3fe5e591dc121e56571450adb672dc9394a"
             },
             "require": {
                 "filp/whoops": "1.*",
@@ -1526,7 +1530,7 @@
                 "raveren/kint": "dev-master",
                 "slim/slim": "~2.6",
                 "symfony/yaml": "2.6.6",
-                "thru.io/active_record": ">=0.3",
+                "thru.io/active_record": ">=0.4",
                 "thru.io/active_record_migrations": "dev-master",
                 "thru.io/session": "dev-master",
                 "thru.io/translation": "dev-master",
@@ -1559,7 +1563,7 @@
                 }
             ],
             "description": "Starter kit using Slim, Active Record, Sessions, Translation, Docker all in a can.",
-            "time": "2015-07-03 16:55:19"
+            "time": "2015-07-09 09:43:25"
         },
         {
             "name": "thru.io/translation",
@@ -2969,29 +2973,29 @@
         },
         {
             "name": "symfony/config",
-            "version": "2.8.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "1e1d6afed4dcb975027f0e480454e8ce9ce57879"
+                "reference": "d9d4627a1dcdeb2562ca438c0b067e428a8ffd68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/1e1d6afed4dcb975027f0e480454e8ce9ce57879",
-                "reference": "1e1d6afed4dcb975027f0e480454e8ce9ce57879",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/d9d4627a1dcdeb2562ca438c0b067e428a8ffd68",
+                "reference": "d9d4627a1dcdeb2562ca438c0b067e428a8ffd68",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9",
-                "symfony/filesystem": "~2.3|~3.0.0"
+                "php": ">=5.5.9",
+                "symfony/filesystem": "~2.8|~3.0"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "~2.7|~3.0.0"
+                "symfony/phpunit-bridge": "~2.8|~3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -3015,30 +3019,30 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 14:16:54"
+            "time": "2015-07-01 20:40:29"
         },
         {
             "name": "symfony/console",
-            "version": "2.8.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "333ddb595b2bc54f03bd093cf6b8b0f5c526b2eb"
+                "reference": "edf20d4b7f28577c06ffba2df5f8254643d0de0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/333ddb595b2bc54f03bd093cf6b8b0f5c526b2eb",
-                "reference": "333ddb595b2bc54f03bd093cf6b8b0f5c526b2eb",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/edf20d4b7f28577c06ffba2df5f8254643d0de0b",
+                "reference": "edf20d4b7f28577c06ffba2df5f8254643d0de0b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.5.9"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/event-dispatcher": "~2.1|~3.0.0",
-                "symfony/phpunit-bridge": "~2.7|~3.0.0",
-                "symfony/process": "~2.1|~3.0.0"
+                "symfony/event-dispatcher": "~2.8|~3.0",
+                "symfony/phpunit-bridge": "~2.8|~3.0",
+                "symfony/process": "~2.8|~3.0"
             },
             "suggest": {
                 "psr/log": "For using the console logger",
@@ -3048,7 +3052,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -3072,7 +3076,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 14:16:54"
+            "time": "2015-07-01 20:40:29"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3134,28 +3138,28 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "2.8.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "27a79f4691ea266511bbe6f33350bde22b61b965"
+                "reference": "eda46c137125a18f951fcf73248ce3edb9d37330"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/27a79f4691ea266511bbe6f33350bde22b61b965",
-                "reference": "27a79f4691ea266511bbe6f33350bde22b61b965",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/eda46c137125a18f951fcf73248ce3edb9d37330",
+                "reference": "eda46c137125a18f951fcf73248ce3edb9d37330",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.5.9"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "~2.7|~3.0.0"
+                "symfony/phpunit-bridge": "~2.8|~3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -3179,32 +3183,32 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 14:16:54"
+            "time": "2015-07-01 20:40:29"
         },
         {
             "name": "symfony/stopwatch",
-            "version": "2.8.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Stopwatch.git",
-                "reference": "cd5f0dc1d3d0e2c83461dad77e20a9186beb6146"
+                "reference": "5a343d48394e3a374f8659ecb2aa9f623d5f4451"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/cd5f0dc1d3d0e2c83461dad77e20a9186beb6146",
-                "reference": "cd5f0dc1d3d0e2c83461dad77e20a9186beb6146",
+                "url": "https://api.github.com/repos/symfony/Stopwatch/zipball/5a343d48394e3a374f8659ecb2aa9f623d5f4451",
+                "reference": "5a343d48394e3a374f8659ecb2aa9f623d5f4451",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.5.9"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "~2.7|~3.0.0"
+                "symfony/phpunit-bridge": "~2.8|~3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -3228,7 +3232,7 @@
             ],
             "description": "Symfony Stopwatch Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 18:24:26"
+            "time": "2015-07-01 20:40:29"
         }
     ],
     "aliases": [],

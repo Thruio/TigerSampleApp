@@ -21,5 +21,5 @@ $database = new \Thru\ActiveRecord\DatabaseLayer(array(
 
 $database->setLogger($monolog);
 
-\Thru\ActiveRecord\DatabaseLayer::set_instance($database);
+\Thru\ActiveRecord\DatabaseLayer::setInstance($database);
 
