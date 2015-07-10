@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "dev-master",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "0d0cd3866c7c2b8d95a26a2e047c46a2a16e1d3e"
+                "reference": "d553ae486c018216631c8e0bbf7a3d19e24870ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0d0cd3866c7c2b8d95a26a2e047c46a2a16e1d3e",
-                "reference": "0d0cd3866c7c2b8d95a26a2e047c46a2a16e1d3e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d553ae486c018216631c8e0bbf7a3d19e24870ca",
+                "reference": "d553ae486c018216631c8e0bbf7a3d19e24870ca",
                 "shasum": ""
             },
             "require": {
@@ -77,7 +77,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-07-07 19:54:50"
+            "time": "2015-07-09 15:49:06"
         },
         {
             "name": "doctrine/cache",
@@ -1427,12 +1427,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/ActiveRecord.git",
-                "reference": "31c90d9aade240134f34f69b1eb796d1f90ff04b"
+                "reference": "ecca249c26e1185ea6dbba7adae1b3b3c6ad65da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Thruio/ActiveRecord/zipball/31c90d9aade240134f34f69b1eb796d1f90ff04b",
-                "reference": "31c90d9aade240134f34f69b1eb796d1f90ff04b",
+                "url": "https://api.github.com/repos/Thruio/ActiveRecord/zipball/ecca249c26e1185ea6dbba7adae1b3b3c6ad65da",
+                "reference": "ecca249c26e1185ea6dbba7adae1b3b3c6ad65da",
                 "shasum": ""
             },
             "require": {
@@ -1472,7 +1472,7 @@
                 }
             ],
             "description": "An active-record like implementation",
-            "time": "2015-07-09 13:43:35"
+            "time": "2015-07-09 13:51:58"
         },
         {
             "name": "thru.io/active_record_migrations",
@@ -1593,7 +1593,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/TigerKit.git",
-                "reference": "c7d48d01bc3e5609c610db3a988e588104934e58"
+                "reference": "65d0bf031bdb08bf683f6802b4ba09b401a973bd"
             },
             "require": {
                 "doctrine/cache": "~1.4",
@@ -1641,7 +1641,7 @@
                 }
             ],
             "description": "Starter kit using Slim, Active Record, Sessions, Translation, Docker all in a can.",
-            "time": "2015-07-09 13:20:22"
+            "time": "2015-07-10 16:40:55"
         },
         {
             "name": "thru.io/translation",
@@ -2555,62 +2555,6 @@
             "time": "2015-07-06 05:45:08"
         },
         {
-            "name": "phpunit/phpunit-mock-objects",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "e4862226480f86ea18ef773212ec1e2acd42ba64"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/e4862226480f86ea18ef773212ec1e2acd42ba64",
-                "reference": "e4862226480f86ea18ef773212ec1e2acd42ba64",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/instantiator": "~1.0,>=1.0.2",
-                "php": ">=5.3.3",
-                "phpunit/php-text-template": "~1.2",
-                "sebastian/exporter": "~1.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.4"
-            },
-            "suggest": {
-                "ext-soap": "*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3.x-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sb@sebastian-bergmann.de",
-                    "role": "lead"
-                }
-            ],
-            "description": "Mock Object library for PHPUnit",
-            "homepage": "https://github.com/sebastianbergmann/phpunit-mock-objects/",
-            "keywords": [
-                "mock",
-                "xunit"
-            ],
-            "time": "2015-07-04 15:35:39"
-        },
-        {
             "name": "satooshi/php-coveralls",
             "version": "v0.6.1",
             "source": {
@@ -3055,12 +2999,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "d9d4627a1dcdeb2562ca438c0b067e428a8ffd68"
+                "reference": "1fcd68c10db2cc669aa44cc3602740ffc131d3ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/d9d4627a1dcdeb2562ca438c0b067e428a8ffd68",
-                "reference": "d9d4627a1dcdeb2562ca438c0b067e428a8ffd68",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/1fcd68c10db2cc669aa44cc3602740ffc131d3ff",
+                "reference": "1fcd68c10db2cc669aa44cc3602740ffc131d3ff",
                 "shasum": ""
             },
             "require": {
@@ -3097,7 +3041,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 20:40:29"
+            "time": "2015-07-09 16:12:34"
         },
         {
             "name": "symfony/console",
@@ -3105,12 +3049,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "edf20d4b7f28577c06ffba2df5f8254643d0de0b"
+                "reference": "a3f42f68c9988f56317c3950f7eff6036d8fbe72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/edf20d4b7f28577c06ffba2df5f8254643d0de0b",
-                "reference": "edf20d4b7f28577c06ffba2df5f8254643d0de0b",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/a3f42f68c9988f56317c3950f7eff6036d8fbe72",
+                "reference": "a3f42f68c9988f56317c3950f7eff6036d8fbe72",
                 "shasum": ""
             },
             "require": {
@@ -3154,7 +3098,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 20:40:29"
+            "time": "2015-07-09 16:12:34"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3220,12 +3164,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
-                "reference": "eda46c137125a18f951fcf73248ce3edb9d37330"
+                "reference": "8b4a1ddbdcaf3b163443168c8f49c1c14a584ddf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/eda46c137125a18f951fcf73248ce3edb9d37330",
-                "reference": "eda46c137125a18f951fcf73248ce3edb9d37330",
+                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/8b4a1ddbdcaf3b163443168c8f49c1c14a584ddf",
+                "reference": "8b4a1ddbdcaf3b163443168c8f49c1c14a584ddf",
                 "shasum": ""
             },
             "require": {
@@ -3261,7 +3205,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 20:40:29"
+            "time": "2015-07-09 16:12:34"
         },
         {
             "name": "symfony/stopwatch",

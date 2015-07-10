@@ -2,3 +2,4 @@
 /vendor/
 public/cache
 build/coverage
+*.sqlite
