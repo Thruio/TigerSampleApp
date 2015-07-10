@@ -22,5 +22,8 @@ use SampleApp\Controllers;
 
 # Boards
 \TigerKit\TigerApp::getSlimApp()->get('/r', '\SampleApp\Controllers\BoardController:showHomepage');
+\TigerKit\TigerApp::getSlimApp()->get('/r/all', '\SampleApp\Controllers\BoardController:showAll');
+\TigerKit\TigerApp::getSlimApp()->get('/r/new', '\SampleApp\Controllers\BoardController:showNew');
+\TigerKit\TigerApp::getSlimApp()->get('/r/list', '\SampleApp\Controllers\BoardController:listBoards');
 \TigerKit\TigerApp::getSlimApp()->get('/r/:board', '\SampleApp\Controllers\BoardController:showBoard');
 \TigerKit\TigerApp::getSlimApp()->get('/r/:board/:thread', '\SampleApp\Controllers\BoardController:showThread');

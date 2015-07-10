@@ -1,0 +1,16 @@
+<div class="row marketing">
+  <div class="col-lg-6">
+    <h4>All Boards</h4>
+
+    <table class="table table-striped">
+      <?php foreach($boards as $board): ?>
+        <?php /** @var $board \TigerKit\Models\Board */ ?>
+        <tr>
+          <td><a href="<?=$this->url("/r/" . $board->getSlug()); ?>"><?=$board->name; ?></a></td>
+          <td><?=date("Y-m-d H:i:s", strtotime($board->created)); ?></td>
+        </tr>
+      <?php endforeach; ?>
+    </table>
+  </div>
+</div>
+

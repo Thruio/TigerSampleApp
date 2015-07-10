@@ -1427,12 +1427,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Thruio/ActiveRecord.git",
-                "reference": "cc1b68fc64b881609e6a1dbdeb7dcacc0b8e2f41"
+                "reference": "31c90d9aade240134f34f69b1eb796d1f90ff04b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Thruio/ActiveRecord/zipball/cc1b68fc64b881609e6a1dbdeb7dcacc0b8e2f41",
-                "reference": "cc1b68fc64b881609e6a1dbdeb7dcacc0b8e2f41",
+                "url": "https://api.github.com/repos/Thruio/ActiveRecord/zipball/31c90d9aade240134f34f69b1eb796d1f90ff04b",
+                "reference": "31c90d9aade240134f34f69b1eb796d1f90ff04b",
                 "shasum": ""
             },
             "require": {
@@ -1442,6 +1442,7 @@
             "require-dev": {
                 "brianium/paratest": "dev-master",
                 "codeclimate/php-test-reporter": "dev-master",
+                "doctrine/cache": "~1.4",
                 "fiunchinho/phpunit-randomizer": "dev-master",
                 "fzaninotto/faker": "1.5.*@dev",
                 "johnkary/phpunit-speedtrap": "~1.0@dev",
@@ -1451,6 +1452,12 @@
                 "raveren/kint": "dev-master",
                 "squizlabs/php_codesniffer": "*"
             },
+            "suggest": {
+                "doctrine/cache": "For caching, we need Doctrine/Cache"
+            },
+            "bin": [
+                "ar_benchmark"
+            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -1465,7 +1472,7 @@
                 }
             ],
             "description": "An active-record like implementation",
-            "time": "2015-07-08 18:20:35"
+            "time": "2015-07-09 13:43:35"
         },
         {
             "name": "thru.io/active_record_migrations",
