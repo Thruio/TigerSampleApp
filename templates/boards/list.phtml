@@ -3,13 +3,23 @@
     <h4>All Boards</h4>
 
     <table class="table table-striped">
+      <thead>
+        <tr>
+          <td>Board</td>
+          <td>Created</td>
+          <td>Thread Count</td>
+        </tr>
+      </thead>
+      <tbody>
       <?php foreach($boards as $board): ?>
         <?php /** @var $board \TigerKit\Models\Board */ ?>
         <tr>
           <td><a href="<?=$this->url("/r/" . $board->getSlug()); ?>"><?=$board->name; ?></a></td>
           <td><?=date("Y-m-d H:i:s", strtotime($board->created)); ?></td>
+          <td><?=$board->thread_count; ?></td>
         </tr>
       <?php endforeach; ?>
+      </tbody>
     </table>
   </div>
 </div>
