@@ -9,7 +9,9 @@ class GalleryController extends BaseController
     public function showList()
     {
         $imageService = new ImageService();
-        $this->slim->render('gallery/list.phtml', ['images' => $imageService->getAllImages()]);
+        $images = $imageService->getAllImages();
+        \Kint::dump($images);
+        $this->slim->render('gallery/list.phtml', ['images' => $images]);
     }
 
     public function showUpload()

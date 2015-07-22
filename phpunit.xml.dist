@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit bootstrap="test-bootstrap.php"
+<phpunit bootstrap="bootstrap.php"
          colors="true"
          stopOnFailure="true">
+
   <testsuites>
-    <testsuite name="active-record">
-      <directory>vendor/thru.io/active_record/tests</directory>
-    </testsuite>
     <testsuite name="tigerkit">
       <directory>vendor/thru.io/tiger-kit/tests</directory>
     </testsuite>
     <testsuite name="models">
-      <directory>tests/Models</directory>
       <directory>vendor/thru.io/tiger-kit/tests/Models</directory>
     </testsuite>
     <testsuite name="services">
-      <directory>tests/Services</directory>
       <directory>vendor/thru.io/tiger-kit/tests/Services</directory>
     </testsuite>
     <testsuite name="web">
