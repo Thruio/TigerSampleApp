@@ -11,10 +11,12 @@ class UserController extends BaseController
 {
     public function showLogin()
     {
-        $this->slim->render('user/login.phtml', array(
-        'no_wrap' => true,
-        'page_title' => 'Login'
-        ));
+        $this->slim->render(
+            'user/login.phtml', array(
+            'no_wrap' => true,
+            'page_title' => 'Login'
+            )
+        );
     }
 
     public function doLogin()
@@ -31,10 +33,12 @@ class UserController extends BaseController
 
     public function showRegister()
     {
-        $this->slim->render('user/register.phtml', array(
-        'no_wrap' => false,
-        'page_title' => 'Register'
-        ));
+        $this->slim->render(
+            'user/register.phtml', array(
+            'no_wrap' => false,
+            'page_title' => 'Register'
+            )
+        );
     }
 
     public function doRegister()
