@@ -1,0 +1,33 @@
+redis:
+  image: redis
+
+mysql:
+  image: mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=5aQNxsB58752fNl
+    - MYSQL_USER=tigerkitsampleapp
+    - MYSQL_PASSWORD=yT4Xx10FkAE4rKN
+    - MYSQL_DATABASE=tigerkitsampleapp
+
+phpmyadmin:
+  environment:
+   - VIRTUAL_HOST=mysql.pod.thru.io
+  expose:
+   - '80'
+  ports:
+   - '4309:80'
+  image: yoshz/phpmyadmin:latest
+  links:
+   - mysql:db
+
+web:
+  build: .
+  ports:
+    - "1937:80"
+  links:
+    - "redis:redis"
+  volumes:
+    - .:/app
+  environment:
+   - VIRTUAL_HOST=pod.thru.io
+
