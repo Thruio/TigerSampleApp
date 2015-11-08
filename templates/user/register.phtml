@@ -1,67 +1,75 @@
-<div class="container-fluid-full">
-  <div class="row-fluid">
-
-    <div class="row-fluid">
-      <div class="login-box">
-        <div class="icons">
-          <a href="/"><i class="halflings-icon home"></i></a>
-        </div>
-        <h2><?php echo $this->t("Register a new " . \TigerKit\TigerApp::Config('Application Name') . " account"); ?></h2>
-
-        <form method="post" action="" class="form-horizontal">
-          <fieldset>
-
-            <div title="Username" class="input-prepend">
-              <span class="add-on"><i class="halflings-icon user"></i></span>
-              <label>Username</label>
-              <input type="text" placeholder="jblogs" id="username" name="username" class="input-large span10">
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="well bs-component">
+      <form class="form-horizontal" method="post" action="">
+        <fieldset>
+          <legend><?php echo $this->t("Register a new " . \TigerKit\TigerApp::Config('Application Name') . " account"); ?></legend>
+          <div class="form-group form-group-username has-feedback">
+            <label class="col-lg-3 control-label" for="username"><?php echo $this->t("Username"); ?></label>
+            <div class="col-lg-9">
+              <input type="text" placeholder="<?php echo $this->t("JSmith"); ?>" id="username" name="username"
+                     class="form-control confirm-field form-check" pattern="[A-Za-z0-9-_]{3,}"
+                     title="Alphanumeric and 3 or more characters in length"
+                     data-toggle="tooltip" data-placement="right"
+                     tabindex="1">
+              <span class="glyphicon form-control-feedback form-control-feedback-username"aria-hidden="true"></span>
+              <span id="usernameStatus" class="sr-only">(success)</span>
             </div>
-            <div class="clearfix"></div>
+          </div>
 
-            <div title="Real name" class="input-prepend">
-              <span class="add-on"><i class="halflings-icon user"></i></span>
-              <label>Real name</label>
-              <input type="text" placeholder="JoeBlogs" id="realname" name="realname" class="input-large span10">
+          <div class="form-group">
+            <label class="col-lg-3 control-label" for="realname"><?php echo $this->t("Real name"); ?></label>
+            <div class="col-lg-9">
+              <input type="text" placeholder="<?php echo $this->t("John Smith"); ?>" id="realname" name="realname"
+                     class="form-control confirm-field form-check"
+                     tabindex="2">
             </div>
-            <div class="clearfix"></div>
+          </div>
 
-            <div title="Email" class="input-prepend">
-              <span class="add-on"><i class="halflings-icon user"></i></span>
-              <label>Email</label>
-              <input type="text" placeholder="j.blogs@example.com" id="email" name="email" class="input-large span10">
+          <div class="form-group form-group-email has-feedback">
+            <label class="col-lg-3 control-label" for="email"><?php echo $this->t("Email"); ?></label>
+            <div class="col-lg-9">
+              <input type="email" placeholder="<?php echo $this->t("j.smith@example.com"); ?>" id="email" name="email"
+                     class="form-control confirm-field form-check"
+                     tabindex="3">
+              <span class="glyphicon form-control-feedback form-control-feedback-email"aria-hidden="true"></span>
+              <span id="emailStatus" class="sr-only">(success)</span>
             </div>
-            <div class="clearfix"></div>
+          </div>
 
-            <div title="Password" class="input-prepend">
-              <span class="add-on"><i class="halflings-icon lock"></i></span>
-              <label>Password</label>
-              <input type="password" placeholder="type password" id="password" name="password"
-                     class="input-large span10">
+          <div class="form-group form-group-password has-feedback">
+            <label class="col-lg-3 control-label" for="password"><?php echo $this->t("Password"); ?></label>
+            <div class="col-lg-9">
+              <input type="password" placeholder="<?php echo $this->t("Password..."); ?>" id="password" name="password"
+                     class="form-control form-check" aria-describedby="passwordStatus" pattern=".{6,}"
+                     title="Minimum of 6 characters"
+                     data-toggle="tooltip" data-placement="right"
+                     tabindex="4">
+              <span class="glyphicon form-control-feedback form-control-feedback-password"aria-hidden="true"></span>
+              <span id="passwordStatus" class="sr-only">(success)</span>
             </div>
-            <div class="clearfix"></div>
+          </div>
 
-            <div title="Password Again" class="input-prepend">
-              <span class="add-on"><i class="halflings-icon lock"></i></span>
-              <label>Password Again</label>
-              <input type="password" placeholder="type password" id="password2" name="password2"
-                     class="input-large span10">
+          <div class="form-group form-group-password2 has-feedback">
+            <label class="col-lg-3 control-label" for="password2"><?php echo $this->t("Password Again"); ?></label>
+            <div class="col-lg-9">
+              <input type="password" placeholder="<?php echo $this->t("Repeat Password..."); ?>" id="password2"
+                     name="password2" class="form-control form-check" aria-describedby="password2Status"
+                     pattern=".{6,}" title="Minimum of 6 characters"
+                     tabindex="5">
+              <span class="glyphicon form-control-feedback form-control-feedback-password2"aria-hidden="true"></span>
+              <span id="password2Status" class="sr-only">(success)</span>
             </div>
-            <div class="clearfix"></div>
+          </div>
 
-            <div class="button-register">
-              <button class="btn btn-primary" type="submit"><?php echo $this->t("Register"); ?></button>
+          <div class="form-group">
+            <div class="col-lg-9 col-lg-offset-3">
+              <button class="btn btn-primary btn-register" type="submit" data-toggle="modal" data-target="#myModal"
+                      tabindex="5"><?php echo $this->t("Register"); ?></button>
             </div>
-            <div class="clearfix"></div>
-
-          </fieldset>
-        </form>
-      </div>
-      <!--/span-->
+          </div>
+        </fieldset>
+      </form>
     </div>
-    <!--/row-->
-
-
   </div>
-  <!--/.fluid-container-->
-
 </div>

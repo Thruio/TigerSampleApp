@@ -33,6 +33,9 @@ class UserController extends BaseController
 
     public function showRegister()
     {
+        $view = $this->slim->view();
+        $view->addJS("assets/js/register/validate.js");
+
         $this->slim->render(
             'user/register.phtml', array(
             'no_wrap' => false,

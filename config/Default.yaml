@@ -2,7 +2,7 @@
 Copyright: 'Your Name Here'
 'Debug Mode': 'On'
 Databases:
-    Default: { Type: Sqlite, File: starterapp.sqlite }
+    Default: { Type: Sqlite, File: ../starterapp.sqlite }
 Caches:
     Default: { Type: Redis, Host: localhost, Port: 6379, Database: 5 }
 Storage:

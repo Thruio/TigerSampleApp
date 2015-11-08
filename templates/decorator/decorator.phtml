@@ -6,8 +6,9 @@
 
 <body>
 
-<div class="container">
   <?= $view->render("decorator/topnav.phtml", ["noWrapper" => true]); ?>
+
+<div class="container">
 
   <?= $view->render($template, ["noWrapper" => true]) ?>
 
@@ -18,5 +19,6 @@
 
 
 <?= $view->render("decorator/end_scripts.phtml", ["noWrapper" => true]); ?>
+
 </body>
 </html>
