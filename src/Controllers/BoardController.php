@@ -8,11 +8,11 @@ use TigerKit\Services\ThreadService;
 class BoardController extends BaseController
 {
     /**
- * @var BoardService 
+ * @var BoardService
 */
     private $boardService;
     /**
- * @var ThreadService 
+ * @var ThreadService
 */
     private $threadService;
 

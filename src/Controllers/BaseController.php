@@ -11,7 +11,7 @@ class BaseController extends \TigerKit\BaseController
     {
         parent::__construct();
         /**
- * @var TigerView $view 
+ * @var TigerView $view
 */
         $view = $this->slim->view();
         $view->setSiteTitle(TigerApp::Config("Application Name"));
