@@ -2,7 +2,6 @@
   "name": "thru.io/tiger-kit-starter-app",
   "description": "Skeleton application using thru.io/tiger-kit",
   "license": "GPL V2",
-  "minimum-stability": "dev",
   "php": ">=5.5.0",
   "authors": [
     {
@@ -20,7 +19,7 @@
     "thru.io/tiger-kit": "^1.0.8"
   },
   "require-dev": {
-    "phpunit/phpunit": "^5.0.0",
+    "phpunit/phpunit": "^4.0.0",
     "codeclimate/php-test-reporter": "dev-master",
     "psr/log": "1.0.0",
     "fzaninotto/faker": "1.5.*@dev",
