@@ -20,7 +20,7 @@
     "thru.io/tiger-kit": "^1.0.8"
   },
   "require-dev": {
-    "phpunit/phpunit": "*",
+    "phpunit/phpunit": "^5.0.0",
     "codeclimate/php-test-reporter": "dev-master",
     "psr/log": "1.0.0",
     "fzaninotto/faker": "1.5.*@dev",
