@@ -17,7 +17,7 @@
     }
   ],
   "require": {
-    "thru.io/tiger-kit": "^1.0"
+    "thru.io/tiger-kit": "^1.0.8"
   },
   "require-dev": {
     "phpunit/phpunit": "*",
